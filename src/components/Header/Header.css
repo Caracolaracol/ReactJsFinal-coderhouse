@@ -1,0 +1,93 @@
+.header-container {
+    height: 18rem;
+    max-height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(1, 4, 0);
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* min-width: 65rem; */
+    align-items: center;
+
+}
+
+/* LOGO CONTAINER*/
+.header__logo-container {
+    height: 10rem;
+    display: flex;
+    width: 65rem;
+}
+
+.header__logo {
+    height: 6rem;
+    display:block;
+    opacity: 1;
+}
+
+.header__logo2 {
+    position: absolute;
+    height: 4.7rem;
+    left: 24.5vw;
+    opacity: 0;
+}
+
+@keyframes desaparecerlogo {
+    from {opacity: 1; }
+    to {opacity: 0; display: none;}
+}
+
+@keyframes aparecerlogo {
+    from {opacity: 0; }
+    to {opacity: 1; }
+}
+
+@keyframes aparecerespiral {
+    0% {opacity: 0; rotate: 0deg;}
+    4% {opacity: 1;}
+    100% {rotate: 390deg;}
+}
+
+@media screen and (max-width: 1093px) {
+.header__logo-container  {
+    width: 77%;
+}
+}
+@media screen and (max-width: 812px) {
+.header__logo-container  {
+    width: 80%;
+}
+}
+@media screen and (max-width: 812px) {
+.header__logo-container  {
+    width: 84%;
+}
+.header__logo {
+    height: 4rem;
+}
+.header-container {
+    height: 6rem;
+}
+}
+
+@media screen and (max-width: 720px) {
+.header__logo-container  {
+    width: 95%;
+}
+}
+
+@media screen and (max-width: 320px) {
+.header__logo-container  {
+    width: 98%;
+}
+.header__logo {
+    height: 3.3rem;
+}
+}

@@ -1,0 +1,13 @@
+.cart-widget__container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+}
+.cart-widget__counter > h2 {
+    font-size: 1.2rem;
+}
+
+.cart-widget__counter > h2 {
+    font-size: 1.2rem;
+}

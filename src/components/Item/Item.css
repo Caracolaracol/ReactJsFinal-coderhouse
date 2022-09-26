@@ -1,0 +1,27 @@
+.card-container {
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-outer {
+    width: 17rem;
+}
+
+.card-inner {
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+
+.card__image {
+    width: 12rem;
+    max-height: 12rem;
+}
+
+.card__title {
+    color:rgb(81, 86, 72);
+}
