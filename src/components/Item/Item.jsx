@@ -1,21 +1,28 @@
 import "./Item.css"
-import Addtocart from "../Addtocart/Addtocart"
+import {Link} from 'react-router-dom'
+
 function Item(props){
-    let {price, title, img, } = props
+    let {price, title, img } = props
+
+    const urlProducto = `/producto/${props.id}`
+
     return (
-        <div className="card-container">
-            <div className="card-outer">
-                <div className="card-inner">
-                    <div className="card__image-container">
-                        <img className="card__image" src={img} alt="card img" />
+        <Link to={urlProducto}>
+            <div className="card-container">
+                <div className="card-outer">
+                    <div className="card-inner">
+                        <div className="card__image-container">
+                            <img className="card__image" src={img} alt="card img" />
+                        </div>
+                        <h2 className="card__title">{title}</h2>
+                        <h3 className="card__price">{price}</h3>
+                        <div className="card__agotado-container">
+                            <h4 className="card__agotado-text">Agotado</h4>
+                        </div>
                     </div>
-                    <h2 className="card__title">{title}</h2>
-                    <h3 className="card__price">{price}</h3>
-                    <Addtocart stock="5" initial="1" />
                 </div>
-                
             </div>
-        </div>
+        </Link>
     )
 }
 export default Item

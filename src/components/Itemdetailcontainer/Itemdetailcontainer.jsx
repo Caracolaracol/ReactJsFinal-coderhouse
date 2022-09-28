@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react'
 import './Itemdetailcontainer.css'
 import Itemdetail from '../Itemdetail/Itemdetail'
 import { getSingleItem } from '../../services/mockAPI'
+import {useParams} from 'react-router-dom'
+
 
 function Itemdetailcontainer() {
     let [data, setData] = useState({}); 
+    const params = useParams()
+    const id = params.id
     useEffect(() => {
-        getSingleItem().then((respuestaDatos) => setData(respuestaDatos))
+        getSingleItem(id).then((respuestaDatos) => setData(respuestaDatos))
     }, []) 
 
 

@@ -2,6 +2,7 @@ import Addtocart from '../Addtocart/Addtocart'
 import './Itemdetail.css'
 import shipcar from '../../assets/icons/shipcar.png'
 import card from '../../assets/icons/card.png'
+
 function Itemdetail(props) {
     return ( 
         <div className='item-detail__outer'>
@@ -38,7 +39,7 @@ function Itemdetail(props) {
                     </div>
 
                     <div className='item-detail__itemcount'>
-                        <Addtocart stock="5" initial="1"/>
+                        <Addtocart stock={props.stock} initial="1"/>
                     </div>
                 </div>
             </div>
@@ -49,12 +50,12 @@ function Itemdetail(props) {
                 </div>
 
                 <div>
-                    <img class="item-detail__image-amino" src={props.imgaminograma} alt="aminograma"/>
+                    <img className="item-detail__image-amino" src={props.imgaminograma} alt="aminograma"/>
                 </div>
             </div>
             <div className='item-detail__extra-detail2'>
                 <div>
-                    <img class="item-detail__image-nutri" src={props.imgnutri} alt="informacionnutricional" width={280}/>
+                    <img className="item-detail__image-nutri" src={props.imgnutri} alt="informacionnutricional" width={280}/>
                 </div>
                 <div>
                     <h3>Modo de uso: </h3>

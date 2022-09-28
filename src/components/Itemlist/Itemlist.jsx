@@ -1,13 +1,22 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import Item from "../Item/Item"
 import getItems from "../../services/mockAPI"
 import './Itemlist.css'
+import {useParams} from 'react-router-dom'
+import { getItemsByCategory } from '../../services/mockAPI'
 
 function Itemlist(){
     let [data, setData] = useState([])
-    getItems().then( (respuestaDatos) => {
-        setData(respuestaDatos) 
-    })
+    let { cat } = useParams()
+
+    useEffect(()=> {
+        if(cat === undefined ) {
+            getItems().then( (respuestaDatos) => setData(respuestaDatos))
+        } else {
+            getItemsByCategory(cat).then((respuestaDatos) =>  setData(respuestaDatos))
+        }
+    }, [cat])
+    
 
 
     return(
@@ -16,6 +25,7 @@ function Itemlist(){
             data.map((item)=> {
                 return (
                     <Item
+                        id={item.id}
                         key={item.id}
                         price={item.price}
                         title={item.title}

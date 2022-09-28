@@ -20,11 +20,16 @@ body {
 
 #root {
   min-height:100vh;  
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
-
+.app__container {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 180px;
+  flex-grow: 1;
+}
 
 /* -----TYPOGRAPHY------- */
 h1 {
