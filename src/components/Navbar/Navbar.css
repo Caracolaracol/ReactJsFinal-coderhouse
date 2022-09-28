@@ -21,7 +21,7 @@ nav.App-header__nav li a {
     color: black;
 }
 nav.App-header__nav li a:hover {
-    color: #3ca0e7;
+    color: rgb(74, 158, 70);
 }
 nav.App-header__nav li:hover {
     cursor: pointer;

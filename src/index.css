@@ -27,10 +27,30 @@ body {
 .app__container {
   z-index: 1;
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
   flex-grow: 1;
 }
 
+.app__brazo-container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  position: relative;
+  height: 30rem;
+  z-index: -1;
+}
+.app__brazo-logo {
+  position: absolute;
+  width: 20rem;
+  text-align: center;
+  bottom: 0
+}
+.app__brazo-text {
+  position: absolute;
+  width: 20rem;
+  text-align: center;
+  bottom: 0
+}
 /* -----TYPOGRAPHY------- */
 h1 {
   font-family: Tahoma;

@@ -16,9 +16,10 @@ function Item(props){
                         </div>
                         <h2 className="card__title">{title}</h2>
                         <h3 className="card__price">{price}</h3>
-                        <div className="card__agotado-container">
+                        
+                        {/* <div className="card__agotado-container">
                             <h4 className="card__agotado-text">Agotado</h4>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
