@@ -1,12 +1,16 @@
 .App-header__nav-container {
     position: absolute;
-    width: 65rem;
-    align-self: center;
+    width: 80vw;
     border-radius: 4px;
     top: 7rem;
-    display: flex;
-    /* box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2); */
 }
+
+.App-header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 nav.App-header__nav ul li {
     list-style: none;
     margin: 0 auto;
@@ -18,7 +22,7 @@ nav.App-header__nav ul li {
 
 }
 nav.App-header__nav li a {
-    color: black;
+    color: rgb(1, 4, 0);
 }
 nav.App-header__nav li a:hover {
     color: rgb(74, 158, 70);
@@ -33,7 +37,7 @@ nav.App-header__nav ul li ul {
     padding-left: 0;
     left: 0;
     display: none;
-    background: white;
+    background: rgb(229, 230, 229);
 }
 nav.App-header__nav ul li:hover > ul,
 nav.App-header__nav ul li ul:hover {
@@ -61,23 +65,13 @@ ul li ul li a {
     transition: all 0.5s ease;
 }
 
-.App-header__nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-}
-
 .nav__titles {
     font-family:'Gongcerrat';
     font-weight: 400;
     text-decoration: none;
     font-size: 1rem;
     padding: 0px;
-    color:rgb(81, 86, 72);
+    color:rgb(109, 115, 97);
     text-transform: none;
     letter-spacing: 1px !important;
     line-height: 1.5;
@@ -88,7 +82,7 @@ ul li ul li a {
 }
 
 @keyframes hoverlinks {
-    from { color:rgb(81, 86, 72);}
+    from { color:rgb(109, 115, 97);}
     to { color: rgb(74, 158, 70);}
 }
 

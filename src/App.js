@@ -15,6 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={ < Itemlistcontainer />}/>
                     <Route path="/category/:cat" element={ < Itemlistcontainer />}/>
+                    <Route path="/type/:type" element={ < Itemlistcontainer />}/>
                     <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
                 </Routes>
                 <div className='app__brazo-container'>

@@ -58,7 +58,6 @@ function Itemdetail(props) {
                     <img className="item-detail__image-nutri" src={props.imgnutri} alt="informacionnutricional" width={280}/>
                 </div>
                 <div>
-                    <h3>Modo de uso: </h3>
                     <p className='item-detail__detail-p'>{props.extradetail}</p>
                 </div>
                 

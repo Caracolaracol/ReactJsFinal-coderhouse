@@ -4,10 +4,11 @@ import getItems from "../../services/mockAPI"
 import './Itemlist.css'
 import {useParams} from 'react-router-dom'
 import { getItemsByCategory } from '../../services/mockAPI'
+import {getItemsByType } from '../../services/mockAPI'
 
 function Itemlist(){
     let [data, setData] = useState([])
-    let { cat } = useParams()
+    let { cat, type } = useParams()
 
     useEffect(()=> {
         if(cat === undefined ) {
@@ -16,6 +17,14 @@ function Itemlist(){
             getItemsByCategory(cat).then((respuestaDatos) =>  setData(respuestaDatos))
         }
     }, [cat])
+
+    useEffect(()=> {
+        if(type === undefined ) {
+            getItems().then( (respuestaDatos) => setData(respuestaDatos))
+        } else {
+            getItemsByType(type).then((respuestaDatos) =>  setData(respuestaDatos))
+        }
+    }, [type])
     
 
 
@@ -31,6 +40,7 @@ function Itemlist(){
                         title={item.title}
                         detail={item.detail}
                         img={item.img}
+                        stock={item.stock}
                     />
                 )
             })

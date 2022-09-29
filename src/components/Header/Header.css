@@ -23,7 +23,8 @@
 .header__logo-container {
     height: 10rem;
     display: flex;
-    width: 65rem;
+    width: 70vw;
+    padding-top: 5px;
 }
 
 .header__logo {

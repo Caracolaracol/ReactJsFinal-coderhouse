@@ -11,7 +11,7 @@ function Itemdetailcontainer() {
     const id = params.id
     useEffect(() => {
         getSingleItem(id).then((respuestaDatos) => setData(respuestaDatos))
-    }, []) 
+    }, [id]) 
 
 
     return (
