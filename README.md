@@ -8,3 +8,4 @@
 - Header, navbar
 - mockAPI but is not finished
 
+- Not responsive yet
