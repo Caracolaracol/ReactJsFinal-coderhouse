@@ -171,6 +171,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:""
     },
     {
         id: 12,
@@ -185,6 +186,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:""
     },
     {
         id: 13,
@@ -199,6 +201,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:""
     },
     {
         id: 14,
@@ -213,6 +216,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:"" 
     },
     {
         id: 15,
@@ -227,6 +231,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "La proteína aislada de poroto mung se obtiene del poroto mung, sienda esta versión una mezcla del aislado proteíco del poroto con cacao natural, creatina y taurina Todos los productos Iron Plant son elaborados con las mejores materias primas sin ingredientes de origen animal. Formato: 1 Kilo / 33 porciones 20 gr de proteína por porció Ingredientes: Proteína aislada de poroto mung, cacao natural, sucralosa. Alérgenos: Elaborado en líneas que procesan soya. trigo, y cacao. Cantidad de sucralosa por porción 0.3 mg IDA 15 mg p/cada kg de peso ",
+        ingredientes:"" 
     },
     {
         id: 16,
@@ -241,6 +246,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "La proteína aislada de poroto mung se obtiene del poroto mung, sienda esta versión una mezcla del aislado proteíco del poroto con cacao natural. ",
+        ingredientes:"" 
     },
     {
         id: 17,
@@ -255,6 +261,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:"" 
     },
     {
         id: 18,
@@ -269,6 +276,7 @@ const data = [
         imginfonutri: "/products/nutririce.jpg",
         detail:
             "",
+        ingredientes:"" 
     },
 
 
@@ -288,6 +296,7 @@ const data = [
         img: '/products/monsterfavabanana4kg01.png',
         detail:
             "Por primera vez a base de Habas! El ganador de peso por excelencia de nuestra marca, una porción de 60 grs (6 cucharadas soperas) equivalen a un plato de 100 grs de legumbres, por lo que es un gran aliado para quienes necesitan comer más, o no quieren saltarse comidas, así como también aquellos que gustan de los deportes al aire libre y quieren llevar un alimento completo.",
+        ingredientes:"" 
     },
     {
         id: 102,
@@ -300,6 +309,7 @@ const data = [
         img: '/products/monsterfavacacao4kg01.png',
         detail:
             "Por primera vez a base de Habas! El ganador de peso por excelencia de nuestra marca, una porción de 60 grs (6 cucharadas soperas) equivalen a un plato de 100 grs de legumbres, por lo que es un gran aliado para quienes necesitan comer más, o no quieren saltarse comidas, así como también aquellos que gustan de los deportes al aire libre y quieren llevar un alimento completo.",
+        ingredientes:"" 
     },
     {
         id: 103,
@@ -312,6 +322,7 @@ const data = [
         img: '/products/monstermungbanana4kg01.png',
         detail:
             "",
+        ingredientes:"" 
     },
     {
         id: 104,
@@ -324,6 +335,7 @@ const data = [
         img: '/products/monstermungcacao4kg01.png',
         detail:
             "",
+        ingredientes:"" 
     },
     {
         id: 105,
@@ -336,6 +348,7 @@ const data = [
         img: '/products/monsterricecacao4kg01.png',
         detail:
             "",
+        ingredientes:"" 
     },
 
 

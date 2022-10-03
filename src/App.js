@@ -10,22 +10,23 @@ import brazo from './assets/brazo.png'
 function App() {
     return (
         <BrowserRouter>
-            <div className='app__container'>
-                <Header />
-                <Routes>
-                    <Route path="/" element={ < Itemlistcontainer />}/>
-                    <Route path="/category/:cat" element={ < Itemlistcontainer />}/>
-                    <Route path="/type/:type" element={ < Itemlistcontainer />}/>
-                    <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
-                </Routes>
-                <div className='app__brazo-container'>
-                    
-                    <img src={brazo} alt="brazo de hojas" className='app__brazo-logo'></img>
-                    <h2 className='app__brazo-text'>Tómate la B12!💛</h2>
+
+                <div className='app__container'>
+                    <Header />
+                        <Routes>
+                            <Route path="/" element={ < Itemlistcontainer />}/>
+                            <Route path="/category/:cat" element={ < Itemlistcontainer />}/>
+                            <Route path="/type/:type" element={ < Itemlistcontainer />}/>
+                            <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
+                            <Route path="/cart" element={ <h2>cart</h2>} />
+                        </Routes>
+                    <div className='app__brazo-container'>
+                        <img src={brazo} alt="brazo de hojas" className='app__brazo-logo'></img>
+                        <h2 className='app__brazo-text'>Tómate la B12!💛</h2>
+                    </div>
                 </div>
-                
-            </div>
-            <Footer/>
+                <Footer/>
+
         </BrowserRouter>
     );
 }

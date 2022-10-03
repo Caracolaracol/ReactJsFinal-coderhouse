@@ -5,6 +5,25 @@
     width: 8rem;
 
 }
+.flex-stock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 5px;
+}
+.item-detail__stock-container {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(9, 9, 9, 0.1) ;
+}
+.item-detail__stock-empty {
+    display: none;
+}
+
 .item-count__inner {
     display: flex;
     flex-direction: row;
@@ -13,6 +32,7 @@
     border-radius: 6px;
     border-width: 1px;
     width: 6rem;
+    margin-top: 1rem;
     
 }
 .item-count__number {

@@ -1,9 +1,18 @@
 import Addtocart from '../Addtocart/Addtocart'
 import './Itemdetail.css'
+import '../Addtocart/Addtocart.css'
 import shipcar from '../../assets/icons/shipcar.png'
 import card from '../../assets/icons/card.png'
-
+import { useState } from 'react'
+import {Link} from 'react-router-dom'
 function Itemdetail(props) {
+    let [estadoItemDetail, setEstadoItemDetail] = useState(false)
+
+    function handleAddToCart(count){
+        alert(`agregaste al ${count} items al carrito!`)
+        setEstadoItemDetail(true)
+    }
+
     return ( 
         <div className='item-detail__outer'>
             <div className="item-detail__inner">
@@ -30,27 +39,19 @@ function Itemdetail(props) {
                     <div>
                         <img src={shipcar} alt="car" width={60}/>
                     </div>
-                    <div className='flex-stock'>
-                        <h4>Stock disponible:</h4>
-                        <div className='item-detail__stock-container'>
-                            <h4> {props.stock}</h4>
-                        </div>
-                        <h4 className='item-detail__stock-empty'>Producto Agotado </h4>
-                    </div>
-
                     <div className='item-detail__itemcount'>
-                        <Addtocart stock={props.stock} initial="1"/>
+                        {estadoItemDetail === false ? <Addtocart stock={props.stock} onAddToCart={handleAddToCart} initial="1"/> : <Link to="/cart" ><button className='item-count__btn-add'> Finalizar compra </button></Link>}
                     </div>
                 </div>
             </div>
             <div className='item-detail__extra-detail'>
                 <div>
-                    <h3>Ingredientes: </h3>
-                    <p className='item-detail__detail-p'>{props.ingredientes}</p> 
+                    {(props.ingredientes) === "" ? " " : <h3>Ingredientes: </h3> }
+                    <p className='item-detail__detail-p'>{(props.ingredientes) === "" ? " " : props.ingredientes }</p> 
                 </div>
 
                 <div>
-                    <img className="item-detail__image-amino" src={props.imgaminograma} alt="aminograma"/>
+                    {props.imgaminograma === "" ? " " : <img className="item-detail__image-amino" src={props.imgaminograma} alt="aminograma"/> }
                 </div>
             </div>
             <div className='item-detail__extra-detail2'>
@@ -60,8 +61,6 @@ function Itemdetail(props) {
                 <div>
                     <p className='item-detail__detail-p'>{props.extradetail}</p>
                 </div>
-                
-
             </div>
         </div> 
     )
