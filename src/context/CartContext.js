@@ -1,22 +1,34 @@
-import useState from 'react'
-import {createContext } from 'react'
+
+import {createContext, useState } from 'react'
 
 export const CartContext = createContext()
 
 const { Provider } = CartContext
 
-const MyProvider = ({children}) => {
-    
+function MyProvider({children}) {
     const [cart, setCart] = useState([])
-    
+
     const isInCart = (id) => {
         return cart.some(prod => prod.id === id) // some, indica si el producto ya existe en cart o no
     }
-    const addItem = () => {}
-    const emptyCart  = () => {
-        return setCart([])
+
+    const addItem = (item, cantidad) => { // agrega productos al carrito sin pisar existentes
+        const newItem = {...item, cantidad}
+        if (isInCart(newItem.id)) {
+            const findProduct =cart.find(prod => prod.id === newItem.id)
+            const productIndex = cart.indexOf(findProduct) 
+            const auxArray = [...cart]
+            auxArray[productIndex].cantidad += cantidad
+            setCart(auxArray)
+
+        } else {
+            setCart([...cart, newItem])
+        }
     }
-    const deleteItem  = (id) => {
+    const emptyCart  = () => {  
+        return setCart([])  
+    }
+    const deleteItem  = (id) => {   
         return setCart(cart.filter(prod => prod.id !== id))
     }
     const getItemQty  = () => {
@@ -26,7 +38,11 @@ const MyProvider = ({children}) => {
         return cart.reduce((acc, x) => acc += x.price * x.cantidad, 0)
     }
     
-    return <Provider value={{isInCart, addItem, emptyCart, deleteItem, getItemPrice, getItemQty}}>{children}</Provider>
+    return (
+            <Provider value={{cart, isInCart, addItem, emptyCart, deleteItem, getItemPrice, getItemQty}}>
+                {children}
+            </Provider>
+    )
 }
 
-export default MyProvider
+export default MyProvider   

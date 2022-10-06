@@ -4,6 +4,8 @@
     border-radius: 4px;
     top: 7rem;
     z-index: 2;
+    display: flex;
+    
 }
 
 .App-header__nav {

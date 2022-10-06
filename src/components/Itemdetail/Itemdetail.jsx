@@ -3,14 +3,18 @@ import './Itemdetail.css'
 import '../Addtocart/Addtocart.css'
 import shipcar from '../../assets/icons/shipcar.png'
 import card from '../../assets/icons/card.png'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import {Link} from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+
 function Itemdetail(props) {
     let [estadoItemDetail, setEstadoItemDetail] = useState(false)
-
+    let { addItem } = useContext(CartContext)
+ 
     function handleAddToCart(count){
         alert(`agregaste al ${count} items al carrito!`)
         setEstadoItemDetail(true)
+        addItem(props, count)
     }
 
     return ( 

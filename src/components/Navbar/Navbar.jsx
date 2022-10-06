@@ -2,7 +2,7 @@ import '../Header/Header.css';
 import * as React from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-
+import Cartwidget from '../Cartwidget/Cartwidget'
 // NAVBAR
 function Navbar() {
     return (
@@ -37,6 +37,7 @@ function Navbar() {
                     <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className="nav__titles">Sobre nosotros</h2></Link></li>
                 </ul>
             </nav>
+            <Cartwidget/>
         </div>
     )
 }

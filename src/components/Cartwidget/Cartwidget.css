@@ -4,10 +4,25 @@
     align-items: center;
     
 }
-.cart-widget__counter > h2 {
-    font-size: 1.2rem;
+.cart-widget__counter {
+    position: absolute;
+    top:-5px;
+    right: 2px;
+    background-color: rgba(69, 99, 84, 0.71);
+    border-radius: 100px;
+    width: 1.4rem;
 }
 
 .cart-widget__counter > h2 {
     font-size: 1.2rem;
+    color: rgb(229, 230, 229);
+}
+
+.cart-widget__image {
+    width: 3rem;
+}
+
+.cart-widget__image > img {
+    position: relative;
+    width: 2.6rem;
 }
