@@ -435,10 +435,9 @@ const data = [
 
 export default function getItems() {
     return new Promise((resolve, reject) => {
-        
     setTimeout(() => {
         resolve(data);
-    }, 1500);
+    }, 1000);
     });
 }
 
@@ -453,7 +452,7 @@ export function getItemsByCategory(cat){
             } else {
                 reject(new Error("Item no encontrado"))
             }
-        }, 1500)
+        }, 1000)
     })
 }
 
@@ -468,7 +467,7 @@ export function getItemsByType(type){
             } else {
                 reject(new Error("Item no encontrado"))
             }
-        }, 1500)
+        }, 1000)
     })
 }
 
@@ -477,10 +476,13 @@ export function getSingleItem(idItem) {
         let itemFind = data.find((item) => {
             return item.id === parseInt(idItem)
         })
-        if (itemFind) {
-            resolve(itemFind)
-        } else {
-            reject(new Error("Item no encontrado"))
-        }
+        setTimeout(() => {
+            if (itemFind) {
+                resolve(itemFind)
+            } else {
+                reject(new Error("Item no encontrado"))
+            }
+        },1000)
+        
     })
 }

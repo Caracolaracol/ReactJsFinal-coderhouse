@@ -5,7 +5,7 @@ import Itemlistcontainer from './components/Itemlistcontainer/Itemlistcontainer'
 import Itemdetailcontainer from './components/Itemdetailcontainer/Itemdetailcontainer'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter, Routes, Route } from "react-router-dom"
-import brazo from './assets/brazo.png'
+import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
 
 function App() {
@@ -20,12 +20,9 @@ function App() {
                             <Route path="/category/:cat" element={ < Itemlistcontainer />}/>
                             <Route path="/type/:type" element={ < Itemlistcontainer />}/>
                             <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
-                            <Route path="/cart" element={ <h2>cart</h2>} />
+                            <Route path="/cart" element={ <Cart/> } />
                         </Routes>
-                        <div className='app__brazo-container'>
-                            <img src={brazo} alt="brazo de hojas" className='app__brazo-logo'></img>
-                            <h2 className='app__brazo-text'>Tómate la B12!💛</h2>
-                        </div>
+                        
                     </MyProvider>
                 </div>
                 <Footer/>
