@@ -6,6 +6,9 @@
 - Item list
 - Categories and type of products with filter
 - Header, navbar
-- mockAPI but is not finished
+- mockAPI
+- Cart view
+- Context
+
 
 - Not responsive yet
