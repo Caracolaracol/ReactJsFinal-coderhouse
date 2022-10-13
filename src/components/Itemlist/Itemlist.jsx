@@ -1,12 +1,11 @@
 import {useEffect, useState} from 'react'
 import Item from "../Item/Item"
-import getItems from "../../services/mockAPI"
+import { getItems, getItemsByCategory, getItemsByType } from "../../services/firestore"
 import './Itemlist.css'
 import {useParams} from 'react-router-dom'
-import { getItemsByCategory } from '../../services/mockAPI'
-import {getItemsByType } from '../../services/mockAPI'
-import Loader from '../Loader/Loader'
 
+import Loader from '../Loader/Loader'
+ 
 function Itemlist(){
     let [data, setData] = useState([])
 

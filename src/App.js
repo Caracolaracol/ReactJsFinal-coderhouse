@@ -7,8 +7,8 @@ import Footer from './components/Footer/Footer'
 import {BrowserRouter, Routes, Route } from "react-router-dom"
 import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
-
 function App() {
+
     return (
             <BrowserRouter>
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Itemdetailcontainer.css'
 import Itemdetail from '../Itemdetail/Itemdetail'
-import { getSingleItem } from '../../services/mockAPI'
+import { getSingleItem } from '../../services/firestore'
 import {useParams} from 'react-router-dom'
 import Loader from '../Loader/Loader'
 import brazo from '../../assets/brazo.png'
