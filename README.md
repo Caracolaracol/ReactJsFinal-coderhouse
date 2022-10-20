@@ -9,6 +9,6 @@
 - mockAPI
 - Cart view
 - Context
-
+- firestore
 
 - Not responsive yet
