@@ -241,6 +241,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:""
         },
         {
@@ -256,6 +257,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:""
         },
         {
@@ -271,6 +273,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:""
         },
         {
@@ -286,6 +289,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:"" 
         },
         {
@@ -301,6 +305,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "La proteína aislada de poroto mung se obtiene del poroto mung, sienda esta versión una mezcla del aislado proteíco del poroto con cacao natural, creatina y taurina Todos los productos Iron Plant son elaborados con las mejores materias primas sin ingredientes de origen animal. Formato: 1 Kilo / 33 porciones 20 gr de proteína por porció Ingredientes: Proteína aislada de poroto mung, cacao natural, sucralosa. Alérgenos: Elaborado en líneas que procesan soya. trigo, y cacao. Cantidad de sucralosa por porción 0.3 mg IDA 15 mg p/cada kg de peso ",
+            extradetail: "",
             ingredientes:"" 
         },
         {
@@ -316,6 +321,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "La proteína aislada de poroto mung se obtiene del poroto mung, sienda esta versión una mezcla del aislado proteíco del poroto con cacao natural. ",
+            extradetail: "",
             ingredientes:"" 
         },
         {
@@ -331,6 +337,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:"" 
         },
         {
@@ -346,6 +353,7 @@ export async function exportDataToFirestore(){
             imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+            extradetail: "",
             ingredientes:"" 
         },
     
@@ -364,8 +372,11 @@ export async function exportDataToFirestore(){
             subcategory: "fava",
             tipo: "masa-muscular",
             img: '/products/monsterfavabanana4kg01.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "Por primera vez a base de Habas! El ganador de peso por excelencia de nuestra marca, una porción de 60 grs (6 cucharadas soperas) equivalen a un plato de 100 grs de legumbres, por lo que es un gran aliado para quienes necesitan comer más, o no quieren saltarse comidas, así como también aquellos que gustan de los deportes al aire libre y quieren llevar un alimento completo.",
+            extradetail: "",
             ingredientes:"" 
         },
         {
@@ -377,9 +388,12 @@ export async function exportDataToFirestore(){
             subcategory: "fava",
             tipo: "masa-muscular",
             img: '/products/monsterfavacacao4kg01.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "Por primera vez a base de Habas! El ganador de peso por excelencia de nuestra marca, una porción de 60 grs (6 cucharadas soperas) equivalen a un plato de 100 grs de legumbres, por lo que es un gran aliado para quienes necesitan comer más, o no quieren saltarse comidas, así como también aquellos que gustan de los deportes al aire libre y quieren llevar un alimento completo.",
-            ingredientes:"" 
+                extradetail: "",
+                ingredientes:"" 
         },
         {
             id: 103,
@@ -390,9 +404,12 @@ export async function exportDataToFirestore(){
             subcategory: "mung",
             tipo: "masa-muscular",
             img: '/products/monstermungbanana4kg01.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
-            ingredientes:"" 
+                extradetail: "",
+                ingredientes:"" 
         },
         {
             id: 104,
@@ -403,8 +420,11 @@ export async function exportDataToFirestore(){
             subcategory: "mung",
             tipo: "masa-muscular",
             img: '/products/monstermungcacao4kg01.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+                extradetail: "",
             ingredientes:"" 
         },
         {
@@ -416,8 +436,11 @@ export async function exportDataToFirestore(){
             subcategory: "arroz",
             tipo: "masa-muscular",
             img: '/products/monsterricecacao4kg01.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "",
+                extradetail: "",
             ingredientes:"" 
         },
     
@@ -433,6 +456,8 @@ export async function exportDataToFirestore(){
             subcategory: "b12",
             tipo: "nutricion-diaria",
             img: '/products/b12.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 " La metilcobalamina es una forma muy conocida de vitamina B12, formada a partir de carbón activado con algunas bacterias capaces de sintetizar B12 como la acetibacterium, enterobacter, agrobacterium , entro otras por lo que no es de origen animal. La vitamina B12 interviene en el buen funcionamiento del sistema inmune, el sistema nervioso y la producción de neurotrasmisores, entre otros Contenido Neto 100 gramos Porciones por envase 100 aprox Depende de sus necesidades por cada gramo se obtiene 1000 mcg, por lo que se puede cubrir el requerimiento semanal (2000 mcg) con 2 gramos",
             extradetail:"Modo de Uso: Coloque de forma sublingual una cantidad de producto equivalente al tamaño de una gota de agua, esta cantidad cubre el requerimiento diario de B12 y este producto contiene 8333 porciones diarias aprox.",
@@ -493,6 +518,8 @@ export async function exportDataToFirestore(){
             subcategory: "probioticos",
             tipo: "nutricion-diaria",
             img: '/products/probiotic.png',
+            imgaminograma: "/products/aminogramarice.jpg",
+            imginfonutri: "/products/nutririce.jpg",
             detail:
                 "Probiótico con cápsula vegetal y 11 cepas que suman en total 50 billones dé probióticos por cada veggie cap! Hemos fusionado nuestras clásicas cepas de Reuteri y Plantarum y hemos añadido 9 más; Bifidobacterium breve, Bifidobacterium bifidum, ssp lactis, B. longum, lactobacillus acidophilus, lactobacillus rhamnosus, Lac. Casei, Lac. Salivarius y lac. Helveticus. Todo esto en una sola cápsula, la cual es libre de gelatina. Ideal para el sistema digestivo",
             extradetail:"Modo de uso: consumir una cápsula al día con un vaso de agua. 1.9 calorías por cápsula. ",

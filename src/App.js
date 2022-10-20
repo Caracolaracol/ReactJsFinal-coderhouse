@@ -23,7 +23,8 @@ function App() {
                             <Route path="/type/:type" element={ < Itemlistcontainer />}/>
                             <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
                             <Route path="/cart" element={ <Cart/> } />
-                            <Route path="/checkout/:orderid" element={<Checkout/>}/>
+                            <Route path="/checkout" element={<Checkout/>}/>
+                            <Route path="/checkout/:orderid" element={<h2>gracias por su compra</h2>}/>
                         </Routes>
                         
                     </MyProvider>

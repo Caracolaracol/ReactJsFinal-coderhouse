@@ -1,31 +1,11 @@
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import './Cart.css'
-import { Link, useNavigate } from 'react-router-dom'
-import { createBuyOrder } from '../../services/firestore'
+import { Link} from 'react-router-dom'
 
 function Cart() {
     const { cart, deleteItem,  getItemPrice } = useContext(CartContext)
-    const navigate = useNavigate()
 
-    const handleCheckout = () => {
-        const orderData = {
-            buyer: {
-                name: "agustin",
-                phone: "19288912",
-                email: "agus.rojasmolina@gmail.com"
-            },
-            items: cart,
-            date: new Date(),
-            total: getItemPrice()
-        }
-        createBuyOrder(orderData).then( orderid => {
-            navigate(`/checkout/${orderid}`)
-        })
-        .catch((error) => {
-            console.log(error);
-          })
-    }
 
     return (
         <div className='cart__container'>
@@ -91,7 +71,9 @@ function Cart() {
                             <div className='cart__goback-container'>
                                 <Link to="/"><button>Regresar a la tienda</button></Link>
                             </div>  
-                            <button onClick={handleCheckout}>Terminar mi compra</button>  
+                            <Link to="/checkout">
+                                <button>Terminar mi compra</button>  
+                            </Link>
                         </div>  
                     </div>
                 }
