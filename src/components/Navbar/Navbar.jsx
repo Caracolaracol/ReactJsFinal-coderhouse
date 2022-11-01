@@ -22,10 +22,8 @@ function Navbar() {
                             <li><Link to="category/proteinas-vegetales">Proteinas Vegetales</Link></li>
                         </ul>
                     </li>
-                    <li className="nav__sections">
-                        <Link to="/">
-                                <h3 className="nav__titles">Que producto me sirve?{ <ArrowDropDownIcon/>} </h3>
-                        </Link>
+                    <li className="nav__sections  pointer-none">
+                        <h3 className="nav__titles pointer-none">Que producto me sirve?{ <ArrowDropDownIcon/>} </h3>
                         <ul className="dropdown">
                             <li><Link to="type/masa-muscular">Masa muscular</Link></li>
                             <li><Link to="type/nutricion-diaria">Nutricion diaria</Link></li>

@@ -25,32 +25,31 @@ function Cartwidget() {
     return ( 
         <div className='cart-widget__container-outer'>
             <div onMouseEnter={handleClick} onMouseLeave={handleClick} >
-                <Link to="./cart"  className='cart-widget__container' >
+                
                     {/* <div className='cart-widget__title'>
                             <h2>Mi Carrito</h2>
                         </div> */ }
                     <div className='cart-widget__outer'>
                         <div className='cart-widget__inner'>
-                            <div className='cart-widget__image'>
-                                <img src={cartIcon} alt="carrito" />
-                                <div className='cart-widget__counter'>
-                                    <h2>{getCartNumber()}</h2>
+                            <Link to="./cart"  className='cart-widget__container' >
+                                <div className='cart-widget__image'>
+                                    
+                                        <img src={cartIcon} alt="carrito" />
+                                        <div className='cart-widget__counter'>
+                                            <h2>{getCartNumber()}</h2>
+                                        
+                                        </div>
+                                    
                                 </div>
-                                
-                            </div>
-                           
+                            </Link>
                         </div>
                     </div>
-                </Link>
+                
                 <Popper placement="bottom-end" id={id} open={open} anchorEl={anchorEl} modifiers={[
     {
       name: 'flip',
-      enabled: true,
-      options: {
-        altBoundary: true,
-        rootBoundary: 'document',
-        padding: 8,
-      },
+      enabled: false,
+
     },
     {
       name: 'preventOverflow',
@@ -60,9 +59,17 @@ function Cartwidget() {
         altBoundary: true,
         tether: true,
         rootBoundary: 'document',
-        padding: 8,
       },
-    },]} >
+    },
+    {
+        name: "offset",
+        enabled: true,
+        options: {
+          offset: [0, -10],
+        },
+    },
+    
+    ]} >
                     <Cartmini></Cartmini>
                 </Popper>
             </div>

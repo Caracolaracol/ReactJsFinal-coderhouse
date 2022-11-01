@@ -1,10 +1,11 @@
 .mini-container{
-    width: 75% !important; 
-    z-index: 299 !important;
+    width: 30vw !important; 
+    z-index: 3 !important;
     background-color:rgb(229, 230, 229);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.078);
 }
 .mini__inner {
+    width: 100% !important; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,13 +17,16 @@
 }
 
 .btn {
-
     padding-left: 10px !important;
     padding-right: 10px !important;
-
-    
 }
 #simple-popper {
-       z-index: 99;
-    inset: -1% -15% auto auto !important;
+    z-index: 3;
+
+
+}
+@media screen and (max-width: 1080px) {
+    .mini-container{
+        width: 50vw !important; 
     }
+}

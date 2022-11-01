@@ -42,3 +42,10 @@
     width: 2.6rem;
 }
 
+
+@media screen and (max-width: 812px) {
+
+    .cart-widget__container-outer {
+        width: 100%;
+    } 
+}

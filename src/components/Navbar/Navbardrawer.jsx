@@ -2,14 +2,11 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link } from 'react-router-dom'
+import './Navbardrawer.css'
+
 export default function Temporarydrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -28,23 +25,39 @@ export default function Temporarydrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width:  270 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      
     >
-      <List>
-        {['Productos', 'Que producto me sirve?', 'Envios', 'Ubicacion', 'sobre nosotros'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <nav className='drawer__nav'>
+        <ul>
+          <li>
+            <Link to="/products"><h2 className='drawer__title'>Productos{<ArrowDropDownIcon fontSize="large"/>}</h2></Link>
+            <ul className='drawer__submenu'>
+              <li><Link to="category/ganadores-de-peso" >Ganadores de Peso</Link></li>
+              <li><Link to="category/vitaminas-y-minerales">Vitaminas y minerales</Link></li>
+              <li><Link to="category/carbohidratos">Carbohidratos</Link></li>
+              <li><Link to="category/probioticos">Probioticos</Link></li>
+              <li><Link to="category/proteinas-vegetales">Proteinas Vegetales</Link></li>
+            </ul>
+          </li>
+          <li>
+            <h2 className='drawer__title'>Que producto me sirve?{<ArrowDropDownIcon fontSize="large"/>}</h2>
+            <ul className='drawer__submenu'>
+                <li><Link to="type/masa-muscular">Masa muscular</Link></li>
+                <li><Link to="type/nutricion-diaria">Nutricion diaria</Link></li>
+                <li><Link to="type/recuperacion-muscular">Recuperacion muscular</Link></li>
+                <li><Link to="type/perdida-de-grasa">Perdida de grasa</Link></li>
+            </ul>
+          </li>
+            <li><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className='drawer__title'>Envíos</h2></Link></li>
+            <li><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className='drawer__title'>Ubicación</h2></Link></li>
+            <li><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className='drawer__title'>Sobre nosotros</h2></Link></li>
+        </ul>
+      </nav>
+      
     </Box>
   );
 
@@ -52,7 +65,7 @@ export default function Temporarydrawer() {
     <div>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /></Button>
+          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon className='miau' fontSize='large' sx={{color: 'rgb(126, 128, 121)'}} /></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
