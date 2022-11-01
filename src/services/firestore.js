@@ -29,6 +29,18 @@ export async function getItems(){
     return dataDocs
 }
 
+export async function getBestItems(){
+    const collectionRef = collection(firestore, 'productos')
+    const queryCategory = query(collectionRef, where('destacado', '==', true))
+    const snapShotDB = await getDocs(queryCategory)
+
+    let dataDocs = snapShotDB.docs.map((doc) => {
+        let docFormateado = {...doc.data(), id: doc.id}
+        return docFormateado
+    })
+    return dataDocs
+}
+
 export async function getSingleItem(idParams){
     const docRef = doc(firestore, 'productos', idParams) // referencia al un documento
     const docSnapshot = await getDoc(docRef)
@@ -75,6 +87,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: true,
             tipo: "masa-muscular",
             img: '/products/nitropeanatural1kg02.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -91,6 +104,7 @@ export async function exportDataToFirestore(){
             stock: 0,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarbejalimon1kg01.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -107,6 +121,7 @@ export async function exportDataToFirestore(){
             stock: 16,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarvejacacao1kg01.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -123,6 +138,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarvejabanana1kg01.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -139,6 +155,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarvejanatural1kg01.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -155,6 +172,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/nitropeacacao1kg01.png',
             imgaminograma: "/products/aminogramapea.jpg",
@@ -171,6 +189,7 @@ export async function exportDataToFirestore(){
             stock: 50,
             category: "proteinas-vegetales",
             subcategory: "arroz",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/nitrorice1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -187,6 +206,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arroz",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/nitroricecacao1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -203,6 +223,7 @@ export async function exportDataToFirestore(){
             stock: 26,
             category: "proteinas-vegetales",
             subcategory: "arroz",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarrozlimon1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -219,6 +240,7 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arroz",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarrozbanana1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -235,12 +257,13 @@ export async function exportDataToFirestore(){
             stock: 6,
             category: "proteinas-vegetales",
             subcategory: "arroz",
+            destacado: true,
             tipo: "masa-muscular",
             img: '/products/proteinaarrozcacao1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
             imginfonutri: "/products/nutririce.jpg",
             detail:
-                "",
+                "Una muy buena combinación de proteína orgánica de arroz con cacao orgánico, hacen de esta proteína una gran alternativa para quienes buscan un batido protéico sin grasa, azúcares, colorantes, de suave digestión,  buen sabor, y sin los alérgenos más conocidos. Ideal para fines deportivos o sólo para reforzar la dieta, es un alimento que se puede integrar a diario en cualquier momento, incluyendo la noche, al ser liviano en calorías pero denso en nutrientes, sobre todo proteína y hierro. ",
             extradetail: "",
             ingredientes:""
         },
@@ -251,6 +274,7 @@ export async function exportDataToFirestore(){
             stock: 8,
             category: "proteinas-vegetales",
             subcategory: "arveja",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinaarroznatural1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -267,6 +291,7 @@ export async function exportDataToFirestore(){
             stock: 8,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/nitromung1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -283,6 +308,7 @@ export async function exportDataToFirestore(){
             stock: 8,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinamunglimon1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -299,6 +325,7 @@ export async function exportDataToFirestore(){
             stock: 28,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/nitromungcacao1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -315,6 +342,7 @@ export async function exportDataToFirestore(){
             stock: 21,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinacacaomung1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -331,6 +359,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinamungnatural1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -347,6 +376,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "proteinas-vegetales",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/proteinamungbanana1kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -370,6 +400,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "ganadores-de-peso",
             subcategory: "fava",
+            destacado: true,
             tipo: "masa-muscular",
             img: '/products/monsterfavabanana4kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -386,6 +417,7 @@ export async function exportDataToFirestore(){
             stock: 0,
             category: "ganadores-de-peso",
             subcategory: "fava",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/monsterfavacacao4kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -402,6 +434,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "ganadores-de-peso",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/monstermungbanana4kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -418,6 +451,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "ganadores-de-peso",
             subcategory: "mung",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/monstermungcacao4kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -434,6 +468,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "ganadores-de-peso",
             subcategory: "arroz",
+            destacado: false,
             tipo: "masa-muscular",
             img: '/products/monsterricecacao4kg01.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -454,6 +489,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "vitaminas-y-minerales",
             subcategory: "b12",
+            destacado: false,
             tipo: "nutricion-diaria",
             img: '/products/b12.png',
             imgaminograma: "/products/aminogramarice.jpg",
@@ -477,6 +513,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "carbohidratos",
             subcategory: "glucohydrat",
+            destacado: false,
             tipo: "recuperacion-muscular",
             img: '/products/glucohydratx.png',
             imgaminograma: "/products/nutriglucohydratx.jpg",
@@ -494,6 +531,7 @@ export async function exportDataToFirestore(){
             stock: 35,
             category: "carbohidratos",
             subcategory: "glucohydrat",
+            destacado: true,
             tipo: "recuperacion-muscular",
             img: '/products/glucohydrat.png',
             imgaminograma: "/products/nutriglucohydrat.jpg",
@@ -516,6 +554,7 @@ export async function exportDataToFirestore(){
             stock: 31,
             category: "probioticos",
             subcategory: "probioticos",
+            destacado: false,
             tipo: "nutricion-diaria",
             img: '/products/probiotic.png',
             imgaminograma: "/products/aminogramarice.jpg",

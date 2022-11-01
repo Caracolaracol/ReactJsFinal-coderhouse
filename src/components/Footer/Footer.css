@@ -3,3 +3,20 @@
     margin-top: auto;
     background-color:rgb(1, 4, 0);
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__envios {
+    margin: 20px;
+    padding-left: 4rem;
+}
+
+.footer__siguenos {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    padding-right: 4rem;
+}

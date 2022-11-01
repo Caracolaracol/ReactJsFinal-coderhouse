@@ -3,6 +3,7 @@ import * as React from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import Cartwidget from '../Cartwidget/Cartwidget'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 // NAVBAR
 function Navbar() {
     return (
@@ -10,8 +11,8 @@ function Navbar() {
             <nav className="App-header__nav">
                 <ul>
                     <li className="nav__sections">
-                        <Link to="/">
-                            <h2 className="nav__titles">Productos</h2>
+                        <Link to="/products">
+                            <h3 className="nav__titles">Productos{<ArrowDropDownIcon/>}</h3>
                         </Link>
                         <ul className="dropdown">
                             <li><Link to="category/ganadores-de-peso" >Ganadores de Peso</Link></li>
@@ -23,7 +24,7 @@ function Navbar() {
                     </li>
                     <li className="nav__sections">
                         <Link to="/">
-                            <h2 className="nav__titles">Que producto me sirve?</h2>
+                                <h3 className="nav__titles">Que producto me sirve?{ <ArrowDropDownIcon/>} </h3>
                         </Link>
                         <ul className="dropdown">
                             <li><Link to="type/masa-muscular">Masa muscular</Link></li>
@@ -32,9 +33,9 @@ function Navbar() {
                             <li><Link to="type/perdida-de-grasa">Perdida de grasa</Link></li>
                         </ul>
                     </li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className="nav__titles">Envíos</h2></Link></li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className="nav__titles">Ubicación</h2></Link></li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h2 className="nav__titles">Sobre nosotros</h2></Link></li>
+                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Envíos</h3></Link></li>
+                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Ubicación</h3></Link></li>
+                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Sobre nosotros</h3></Link></li>
                 </ul>
             </nav>
             <Cartwidget/>

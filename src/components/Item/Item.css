@@ -26,7 +26,7 @@
 }
 
 .card {
-    width: 17rem;
+    /* width: 17rem; */
     display: flex;
     justify-content: center;
 }
@@ -64,8 +64,6 @@
     height: 6rem;
     display: flex;
     flex-direction: column;
-    
-    
 }
 .card__title-container {
     flex-grow: 2;
@@ -107,4 +105,40 @@
 
 .card__price {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width:480px) {
+    .card-outer {
+        width: 8rem;
+    }
+    .card-inner {
+        width: 8rem;
+    }
+    .card__image {
+        max-height: 8rem;
+    }
+    .card__info-container {
+        height: 7rem;
+        z-index: 8;
+    }
+    .card__price {
+        font-size: 1.2rem;
+    }
+    .card__agotado-container {
+        width: 70%;
+    }
+    .card__hoja-container {
+        width: 29%;
+    }
+    .card__price-container {
+        width: 38%;
+    }
+    .card__title {
+        font-size: 1.1rem;
+    }
+    .card__title-container {
+        flex-grow: 2;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 }

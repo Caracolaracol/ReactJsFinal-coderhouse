@@ -1,0 +1,28 @@
+.mini-container{
+    width: 75% !important; 
+    z-index: 299 !important;
+    background-color:rgb(229, 230, 229);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.078);
+}
+.mini__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mini__itemlist-container {
+    width: 60vw !important;
+    max-width: 90% !important;
+}
+
+.btn {
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    
+}
+#simple-popper {
+       z-index: 99;
+    inset: -1% -15% auto auto !important;
+    }

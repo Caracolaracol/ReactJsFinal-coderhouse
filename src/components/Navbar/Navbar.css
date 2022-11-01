@@ -1,24 +1,30 @@
 .App-header__nav-container {
-    position: absolute;
-    width: 80vw;
+    /* position: absolute; */
+    width: 90%;
     border-radius: 4px;
     top: 7rem;
     z-index: 2;
     display: flex;
-    
+
 }
 
 .App-header__nav {
-    width: 100%;
+    width: 87%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.arrowflex {
+    display: flex;
+    flex-direction: row;
 }
 
 nav.App-header__nav ul li {
     list-style: none;
     margin: 0 auto;
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 .8rem;
     position: relative;
     text-decoration: none;
     text-align: center;
@@ -45,7 +51,9 @@ nav.App-header__nav ul li ul {
 nav.App-header__nav ul li:hover > ul,
 nav.App-header__nav ul li ul:hover {
     visibility: visible;
-    opacity: 1;
+    animation: hovermenu 150ms ease-in;
+    opacity: .95;
+    transition: all 0.8s ease;
     display: block;
     min-width: 250px;
     text-align: left;
@@ -69,20 +77,28 @@ ul li ul li a {
 }
 
 .nav__titles {
-    font-family: LouisGeorgeBold;
     text-decoration: none;
-    font-size: 1.1rem;
     padding: 0px;
-    color:rgb(109, 115, 97);
+    color:rgb(126, 128, 121);
     text-transform: none;
     letter-spacing: 1px !important;
     line-height: 1.5;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 .nav__titles:hover {
     color:rgb(74, 158, 70);
     animation: hoverlinks 200ms ease-in;
 }
-
+@keyframes hovermenu {
+    from { 
+        opacity: 0;  
+    }
+    to { 
+        opacity: .95;
+    }
+}
 @keyframes hoverlinks {
     from { color:rgb(109, 115, 97);}
     to { color: rgb(74, 158, 70);}
@@ -90,7 +106,7 @@ ul li ul li a {
 
 @media screen and (max-width: 1080px) {
     .App-header__nav-container  {
-        width: 100%;
+        width: 90%;
     }
 }
 @media screen and (max-width: 812px) {

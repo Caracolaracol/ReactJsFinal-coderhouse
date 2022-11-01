@@ -38,9 +38,12 @@ function Itemcount({stock, onAddToCart, initial}) {
                 </div>
             </div>
             <div className='item-count__add-container'>
-                <button className='item-count__btn-add' onClick={() => onAddToCart(count)}>
-                    <img className='item-count__cart-icon' src={icon} alt="carrito"/>agregar al carrito
-                </button>
+                <div className='flexbtn'>
+                    <button className='item-count__btn-add' onClick={() => onAddToCart(count)}>
+                        <img className='item-count__cart-icon' src={icon} alt="carrito"/>agregar al carrito
+                    </button>
+                </div>
+                
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import logo from '../../assets/logo1.png'
 import './Header.css';
 import Navbar from '../Navbar/Navbar'
-
+import Temporarydrawer from '../Navbar/Navbardrawer'
 function Header() {
 
     return (
@@ -9,18 +9,19 @@ function Header() {
             <header className="header">
                 <div className="header__logo-container">
                     
-                    <a href="/"><img src={logo} className="header__logo" alt="logo2" /></a>
-                    <div>
-
+                    <a href="/">
+                        <img src={logo} className="header__logo" alt="logo2" />
+                    </a>
+                    <div className='header__burger'>
+                        <Temporarydrawer/>
                     </div>
                     <div>
 
                     </div>
                 </div>
-                <Navbar />
                 
+                <Navbar />
             </header>
-            
         </div>
     );
 }

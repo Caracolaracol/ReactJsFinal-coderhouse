@@ -44,13 +44,16 @@ function Itemdetail(props) {
                         <img src={shipcar} alt="car" width={60}/>
                     </div>
                     <div className='item-detail__itemcount'>
-                        {estadoItemDetail === false ? <Addtocart stock={props.stock} onAddToCart={handleAddToCart} initial="1"/> : <Link to="/cart" ><button className='item-count__btn-add'> Finalizar compra </button></Link>}
+                        
+                            { props.stock === 0 ? <div className='item-detail__agotado'><h3>Producto agotado</h3></div> :  estadoItemDetail === false ? <Addtocart stock={props.stock} onAddToCart={handleAddToCart} initial="1"/> : <Link to="/cart" ><div className='flexbtn'><button className='item-count__btn-add'> Finalizar compra </button></div></Link> }
+                       
+                        
                     </div>
                 </div>
             </div>
             <div className='item-detail__extra-detail'>
                 <div>
-                    {(props.ingredientes) === "" ? " " : <h3>Ingredientes: </h3> }
+                    {(props.ingredientes) === "" ? <h2>Aminograma en 100 gramos</h2> : <h3>Ingredientes: </h3> }
                     <p className='item-detail__detail-p'>{(props.ingredientes) === "" ? " " : props.ingredientes }</p> 
                 </div>
 
@@ -60,10 +63,10 @@ function Itemdetail(props) {
             </div>
             <div className='item-detail__extra-detail2'>
                 <div>
-                    <img className="item-detail__image-nutri" src={props.imgnutri} alt="informacionnutricional" width={280}/>
+                    {props.imgnutri === "" ? " " : <img className="item-detail__image-nutri" src={props.imgnutri} alt="informacionnutricional" width={280}/>}
                 </div>
                 <div>
-                    <p className='item-detail__detail-p'>{props.extradetail}</p>
+                    {(props.extradetail === "") ? <h2>Información nutricional</h2> : <p className='item-detail__detail-p'>{props.extradetail}</p>}
                 </div>
             </div>
         </div> 

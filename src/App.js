@@ -8,25 +8,25 @@ import Checkout from './components/Checkout/Checkout'
 import {BrowserRouter, Routes, Route } from "react-router-dom"
 import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
+import Indexcontainer from './components/Indexcontainer/Indexcontainer'
 // import { exportDataToFirestore } from './services/firestore';
 function App() {
     return (
             <BrowserRouter>
                  <div className='app__container'>
-                    <MyProvider>
-                        
+                    <MyProvider>                      
                         <Header />
-                        {/* <button onClick={exportDataToFirestore}>Mostrar datos</button> */}
+                         {/*<button onClick={exportDataToFirestore}>Mostrar datos</button>*/ }
                         <Routes> 
-                            <Route path="/" element={ < Itemlistcontainer />}/>
+                            <Route path="/" element={ < Indexcontainer />}/>
+                            <Route path="/products" element={ < Itemlistcontainer />}/>
                             <Route path="/category/:cat" element={ < Itemlistcontainer />}/>
                             <Route path="/type/:type" element={ < Itemlistcontainer />}/>
                             <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
                             <Route path="/cart" element={ <Cart/> } />
                             <Route path="/checkout" element={<Checkout/>}/>
                             <Route path="/checkout/:orderid" element={<h2>gracias por su compra</h2>}/>
-                        </Routes>
-                        
+                        </Routes>                  
                     </MyProvider>
                 </div>
                 <Footer/>

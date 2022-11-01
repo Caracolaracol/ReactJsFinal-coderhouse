@@ -1,16 +1,17 @@
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import './Cart.css'
+import './Cartmini.css'
 import { Link} from 'react-router-dom'
 
-function Cart() {
+function Cartmini() {
     const { cart, deleteItem,  getItemPrice } = useContext(CartContext)
 
 
     return (
-        <div className='cart__container'>
-            <div className='cart__inner'>
-                <div className='cart__itemlist-container'>
+        <div className='mini-container'>
+            <div className='mini__inner'>
+                <div className='mini__itemlist-container'>
                     <div className='cart__item-container'>
                         <div className="cart__image-box">
                         </div>
@@ -53,9 +54,6 @@ function Cart() {
                 </div>
                 { (cart.length === 0) ? 
                     <div className='cart__checkout-container'>
-                        <div className='cart__goback-container '>
-                            <Link to="/"><button className='btn'>Regresar a la tienda</button></Link>
-                        </div>
                     </div> :
                     <div className='cart__checkout-container'>
                         <div className='cart__checkout-total'>
@@ -67,7 +65,7 @@ function Cart() {
                         <div className='cart__btns'>
                             
                                 <div className='cart__goback-container'>
-                                    <Link to="/"><button className='btn'>Regresar a la tienda</button></Link>
+                                    <Link to="./cart"><button className='btn'>Ir al carrito</button></Link>
                                 </div>
                                 <div className='cart__goback-container'> 
                                 <Link to="/checkout">
@@ -82,4 +80,4 @@ function Cart() {
     )
 }
 
-export default Cart
+export default Cartmini
