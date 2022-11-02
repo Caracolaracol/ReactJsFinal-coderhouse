@@ -48,4 +48,10 @@
     .cart-widget__container-outer {
         width: 100%;
     } 
+    .cart-widget__image > img {
+        width: 2.1rem;
+    }
+    .cart-widget__counter {
+        width: 1.2rem;
+    }
 }
