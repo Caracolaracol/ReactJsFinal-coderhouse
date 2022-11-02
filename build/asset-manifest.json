@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d15b4b6a.css",
+    "main.js": "/static/js/main.8683678e.js",
+    "static/media/ProteinColor.webp": "/static/media/ProteinColor.52589b90b5d8b4273ab6.webp",
+    "static/media/Gontserrat-Medium.ttf": "/static/media/Gontserrat-Medium.ba1d9af70259383392fd.ttf",
+    "static/media/brazo.png": "/static/media/brazo.5da28420189a367f18d8.png",
+    "static/media/espiral.png": "/static/media/espiral.1f425b6b8c620f2e996b.png",
+    "static/media/hoja.png": "/static/media/hoja.e2bc92ae29705b931563.png",
+    "static/media/Louis George Cafe Bold.ttf": "/static/media/Louis George Cafe Bold.d231532dff7238f82e0d.ttf",
+    "static/media/Louis George Cafe.ttf": "/static/media/Louis George Cafe.eacd87871e9a39013626.ttf",
+    "static/media/ViceCitySans.otf": "/static/media/ViceCitySans.375419c38b330981b8b1.otf",
+    "static/media/logo1.png": "/static/media/logo1.501f121c0083adcfe882.png",
+    "index.html": "/index.html",
+    "main.d15b4b6a.css.map": "/static/css/main.d15b4b6a.css.map",
+    "main.8683678e.js.map": "/static/js/main.8683678e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d15b4b6a.css",
+    "static/js/main.8683678e.js"
+  ]
+}
