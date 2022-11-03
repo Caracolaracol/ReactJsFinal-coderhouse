@@ -1,5 +1,5 @@
 # Remake of Ironplant.cl 🌱
-___
+
 
 ## Proyecto final para el curso React Js de Coderhouse
 
@@ -14,7 +14,7 @@ ___
 - Diseño responsive y adaptativo
 - Lista de items, Detalle y Carrito.
 - Incluye checkout con envío de orden a firestore
-___
+
 
 ## Herramientas
 Utilicé las siguientes herramientas y tecnologías para levantar el sitio
