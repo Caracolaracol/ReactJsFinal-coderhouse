@@ -75,10 +75,12 @@
     .header__logo-container  {
         width: 85%;
     }
-
 }
 
 @media screen and (max-width: 812px) {
+    .header__logo {
+        height: 95%;
+    }
     .header__logo-container  {
         width: 95%;
     }
@@ -95,15 +97,17 @@
         flex-direction: column;
         justify-content: center;
     }
-    
 }
 
 @media screen and (max-width: 720px) {
     .header__logo-container  {
         width: 100%;
     }
-    
+    .header__logo {
+        height: 90%;
+    }
 }   
+
 @media screen and (max-width: 480px) {
     .header__logo {
         height: 80%;
@@ -115,6 +119,7 @@
         padding: 0rem;
     }
 }
+
 @media screen and (max-width: 320px) {
     .header__logo-container  {
         width: 95%;

@@ -24,7 +24,7 @@ function Cartwidget() {
 
     return ( 
         <div className='cart-widget__container-outer'>
-            <div onMouseEnter={handleClick} onMouseLeave={handleClick} >
+            <div className='cart-widget__container-inner' onMouseEnter={handleClick} onMouseLeave={handleClick} >
                 
                     {/* <div className='cart-widget__title'>
                             <h2>Mi Carrito</h2>

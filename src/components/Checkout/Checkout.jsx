@@ -2,6 +2,7 @@ import { useState, useContext  } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { useNavigate } from 'react-router-dom'
 import { createBuyOrder } from '../../services/firestore'
+import './Checkout.css'
 
 function Checkout(){
     const [dataForm, setDataForm] = useState({name:"", phone:"", email:""})
@@ -34,49 +35,54 @@ function Checkout(){
           })
     }
     return (
-        <div className="form-container">
-            <form onSubmit={handleCheckout}>
-                <for className="form__item">
-                    <label>
-                        Nombre
-                    </label>
-                    <input 
-                        value={dataForm.name}
-                        onChange={inputChangeHandler}
-                        name="name"
-                        type="text"
-                        placeholder='nombre'
-                        required 
-                    />
-                </for>
-                <div className="form__item">
-                    <label>
-                        Telefono
-                    </label>
-                    <input 
-                        value={dataForm.phone}
-                        onChange={inputChangeHandler}
-                        name="phone"
-                        type="text"
-                        placeholder='telefono'
-                        required 
-                    />
-                </div>
-                <div className="form__item">
-                    <label>
-                        E-mail
-                    </label>
-                    <input 
-                        value={dataForm.email}
-                        onChange={inputChangeHandler}
-                        name="email"
-                        type="text"
-                        placeholder='email'
-                        required 
-                    />
-                </div>
-                <button type="submit" onClick={handleCheckout}>Finalizar Compra</button>
-            </form>
+        <div className='checkout__container'>
+            <div className="form__container">
+                <form onSubmit={handleCheckout} className="form">
+                    <for className="form__item">
+                        <label>
+                            <h3>Nombre</h3>
+                        </label>
+                        <input 
+                            value={dataForm.name}
+                            onChange={inputChangeHandler}
+                            name="name"
+                            type="text"
+                            placeholder='nombre'
+                            required 
+                        />
+                    </for>
+                    <div className="form__item">
+                        <label>
+                            <h3>Telefono</h3>
+                        </label>
+                        <input 
+                            value={dataForm.phone}
+                            onChange={inputChangeHandler}
+                            name="phone"
+                            type="text"
+                            placeholder='telefono'
+                            required 
+                        />
+                    </div>
+                    <div className="form__item">
+                        <label>
+                            <h3>E-mail</h3>
+                        </label>
+                        <input 
+                            value={dataForm.email}
+                            onChange={inputChangeHandler}
+                            name="email"
+                            type="text"
+                            placeholder='email'
+                            required 
+                        />
+                    </div>
+                    <div className='form__btn-container'>
+                        <button type="submit" onClick={handleCheckout} className='btn'><h3>Finalizar Compra</h3></button>
+                    </div>
+                    
+                </form>
+            </div>
         </div>
     )
 }

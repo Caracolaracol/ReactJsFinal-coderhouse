@@ -44,7 +44,6 @@ export async function getBestItems(){
 export async function getSingleItem(idParams){
     const docRef = doc(firestore, 'productos', idParams) // referencia al un documento
     const docSnapshot = await getDoc(docRef)
-
     return {...docSnapshot.data(), id:docSnapshot.id}
 }
 

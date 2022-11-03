@@ -1,12 +1,16 @@
 .cart-widget__container-outer {
     width: 13%;
-
+    
 }
 .cart-widget__container {
     display: flex;
     align-content: center;
     align-items: center;
+    z-index: 5;
     width: 100%;
+}
+.cart-widget__container-inner {
+    width: 20%;
 }
 .cart-widget__outer {
     width: 100%;
@@ -18,9 +22,14 @@
 
 .cart-widget__image {
     position: relative;
-    width: 40%;
+    /* width: 40%; */
     display: inline-flex;
     justify-content: flex-end;
+}
+.cart-widget__image > img:hover {
+    border-radius: 5px;
+    background-color: rgba(74, 158, 70, 0.564);
+    transition: 150ms ease-in;
 }
 
 .cart-widget__counter {
