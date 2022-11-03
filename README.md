@@ -4,7 +4,7 @@
 ## Proyecto final para el curso React Js de Coderhouse
 
 Para este desafío realicé un remake de la página oficial de Ironplant, un sitio de tipo  e-commerce dedicado a la venta de suplementos de origen vegetal. 
-___
+
 
 ## Caracteristicas
 - Montado con ReactJS
