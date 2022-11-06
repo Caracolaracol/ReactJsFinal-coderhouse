@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Header from './components/Header/Header';
+import Envios from './pages/Envios'
 import Itemlistcontainer from './components/Itemlistcontainer/Itemlistcontainer';
 import Itemdetailcontainer from './components/Itemdetailcontainer/Itemdetailcontainer'
 import Footer from './components/Footer/Footer'
@@ -27,6 +28,8 @@ function App() {
                             <Route path="/cart" element={ <Cart/> } />
                             <Route path="/checkout" element={<Checkout/>}/>
                             <Route path="/checkout/:orderid" element={<Checkoutend/>}/>
+                            <Route path="/envios" element={<Envios/>}/>
+                            <Route path="*" element={ <h1> 404: Te perdiste</h1> } />
                         </Routes>                  
                     </MyProvider>
                 </div>

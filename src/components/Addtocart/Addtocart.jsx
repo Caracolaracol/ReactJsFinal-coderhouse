@@ -3,7 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 import './Addtocart.css'
 import { useState } from 'react';
 import icon from '../../assets/icons/addcart.png'
-import toast, { Toaster } from 'react-hot-toast';
+
 function Itemcount({stock, onAddToCart, initial}) {
     let [count, setCount] = useState(parseInt(initial))
     

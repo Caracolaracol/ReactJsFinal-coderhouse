@@ -43,6 +43,7 @@
     align-items: center;
 }
 .cart-widget__counter > h2 {
+    font-style: normal;
     font-size: 1.2rem;
     color: rgb(229, 230, 229);
 }

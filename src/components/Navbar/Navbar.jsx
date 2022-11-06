@@ -31,9 +31,9 @@ function Navbar() {
                             <li><Link to="type/perdida-de-grasa">Perdida de grasa</Link></li>
                         </ul>
                     </li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Envíos</h3></Link></li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Ubicación</h3></Link></li>
-                    <li className="nav__sections"><Link to="https://github.com/Caracolaracol?tab=repositories"><h3 className="nav__titles">Sobre nosotros</h3></Link></li>
+                    <li className="nav__sections"><Link to="/envios"><h3 className="nav__titles">Envíos</h3></Link></li>
+                    <li className="nav__sections"><Link to="*"><h3 className="nav__titles">Ubicación</h3></Link></li>
+                    <li className="nav__sections"><Link to="*"><h3 className="nav__titles">Sobre nosotros</h3></Link></li>
                 </ul>
             </nav>
             <Cartwidget/>
