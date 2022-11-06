@@ -25,7 +25,7 @@ export default function Temporarydrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width:  290 }}
+      sx={{ width:  290, }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -67,6 +67,7 @@ export default function Temporarydrawer() {
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}><MenuIcon className='miau' fontSize='large' sx={{color: 'rgb(126, 128, 121)'}} /></Button>
           <Drawer
+          
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
