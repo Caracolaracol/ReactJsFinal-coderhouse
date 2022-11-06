@@ -1,6 +1,14 @@
 .drawer__nav {
     width: 95%;
     background-color:rgb(229, 230, 229);
+    
+}
+ul {
+    list-style-type: none;
+    
+}
+li {
+    margin-bottom: .6rem;
 }
 nav.drawer__nav li a {
     color: rgb(1, 4, 0);
@@ -12,13 +20,14 @@ nav.drawer__nav li a:hover {
 nav.drawer__nav ul li ul {
     padding-left: 0;
     left: 0;
-    background: rgb(229, 230, 229);
+    background-color:#e5e6e5 !important; 
 }
 nav.drawer__nav ul li:hover > ul,
 nav.drawer__nav ul li ul:hover {
     transition: all 0.8s ease;
     min-width: 250px;
     text-align: left;
+    
 }
 nav.drawer__nav ul li ul li a:hover {
     padding-left: 10px;
@@ -32,6 +41,7 @@ nav.drawer__nav ul li ul li a:hover {
     text-transform: none;
     letter-spacing: 1px !important;
     line-height: 1.5;
+    
 }
 .drawer__title:hover {
     color:rgb(74, 158, 70);

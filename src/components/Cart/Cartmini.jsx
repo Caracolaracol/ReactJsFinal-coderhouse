@@ -57,10 +57,18 @@ function Cartmini() {
                     </div> :
                     <div className='cart__checkout-container'>
                         <div className='cart__checkout-total'>
-                            <h2>Subtotal:</h2>
-                            <h3>{getItemPrice()}</h3>
-                            <h2>Total (más envío):</h2>
-                            <h2>{getItemPrice() + 4990}</h2>
+                            <div   div className='cart__subtotal'>  
+                                <h3>Subtotal:</h3>
+                                <h3>{getItemPrice()}</h3>
+                            </div>
+                            <div className='cart__envio'>
+                                <h3>Envío:</h3>
+                                <h3>4990</h3>
+                            </div>
+                            <div className='cart__total'>   
+                                <h2>Total (más envío):</h2>
+                                <h2>{getItemPrice() + 4990}</h2>
+                            </div>
                         </div>
                         <div className='cart__btns'>
                             

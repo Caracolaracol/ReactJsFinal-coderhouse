@@ -10,7 +10,7 @@ import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
 import Indexcontainer from './components/Indexcontainer/Indexcontainer'
 import { Checkoutend } from './components/Checkout/Checkout';
-// import { exportDataToFirestore } from './services/firestore';
+// import { exportDataToFirestore } from './services/firestore'; // import comentado para cuando quiera volver a llevar data a firestore
 function App() {
     return (
             <BrowserRouter>

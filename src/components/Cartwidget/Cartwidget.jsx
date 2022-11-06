@@ -26,10 +26,6 @@ function Cartwidget() {
     return ( 
         <div className='cart-widget__container-outer'>
             <div className='cart-widget__container-inner' onMouseEnter={handleClick} onMouseLeave={handleClick} >
-                
-                    {/* <div className='cart-widget__title'>
-                            <h2>Mi Carrito</h2>
-                        </div> */ }
                     <div className='cart-widget__outer'>
                         <div className='cart-widget__inner'>
                             <Link to="./cart"  className='cart-widget__container' >
@@ -46,7 +42,7 @@ function Cartwidget() {
                         </div>
                     </div>
                 
-                <Popper  onClick={handleClick} placement="bottom-end" id={id} open={open} anchorEl={anchorEl} modifiers={[
+                <Popper  className='cart-widget__popper' onClick={handleClick} placement="bottom-end" id={id} open={open} anchorEl={anchorEl} modifiers={[
     {
       name: 'flip',
       enabled: false,

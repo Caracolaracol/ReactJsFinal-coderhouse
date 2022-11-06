@@ -23,11 +23,6 @@ function Indexcontainer(){
             <div className="index-container">
                 <div className="index__bienvenido">
                     <h1> Bienvenido a Ironplant, <h2>La primera marca vegana en Chile de suplementos alimenticios</h2> </h1>
-                   { 
-                   /* <div className='index__info'>
-                        
-                    </div> */
-                    }
                 </div>
                 <div className="index__destacados-container">
                     <div className='index__proteins-container'>
