@@ -49,17 +49,15 @@ body {
 
 /* -----TYPOGRAPHY------- */
 h1 {
-  font-style: 'LouisGeorgeBold';
-  font-size:2rem;
-  font-weight: 700;
-  color:rgb(81, 86, 72);
-  letter-spacing: 3px;
+  font-family: 'Figerona-VF';
+  font-size:4rem;
+  color:rgb(83, 86, 72);
 }
 
 h2 {
-  
+  font-family: 'Montserrat', sans-serif;
   color:rgb(81, 86, 72);
-  font-size:1.5rem;
+  font-size:2rem;
 }
 
 h3 {
@@ -70,6 +68,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'Figerona-VF';
   color:rgba(81, 86, 72, 0.748)
 }
 
@@ -81,10 +80,12 @@ li {
 }
 
 a {
+  font-family: 'Figerona-VF';
   text-decoration: none;
 }
 
 p {
+  font-family: 'Figerona-VF';
   color:rgb(81, 86, 72);
 }
 
@@ -114,5 +115,47 @@ p {
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Figerona-VF';
+  src: url('./fonts/Figerona-VF.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 
 /* --- media queries --- */
+@media screen and (max-width: 1093px) {
+  h1 {
+    font-size:3.2rem;
+  }
+  
+  h2 {
+    font-size:1.5rem;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 920px) {
+  h1 {
+    font-size:2.9rem;
+  }
+  
+  h2 {
+    font-size:1.5rem;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 740px) {
+
+}
+@media screen and (max-width: 720px) {
+
+}
+@media screen and (max-width:480px) {
+  h1 {
+    font-size:2.2rem;
+  }
+  
+  h2 {
+    font-size:1rem;
+    font-style: italic;
+  }
+}
