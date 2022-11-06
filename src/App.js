@@ -9,6 +9,7 @@ import {BrowserRouter, Routes, Route } from "react-router-dom"
 import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
 import Indexcontainer from './components/Indexcontainer/Indexcontainer'
+import { Checkoutend } from './components/Checkout/Checkout';
 // import { exportDataToFirestore } from './services/firestore';
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                             <Route path="/producto/:id" element={< Itemdetailcontainer />}/>
                             <Route path="/cart" element={ <Cart/> } />
                             <Route path="/checkout" element={<Checkout/>}/>
-                            <Route path="/checkout/:orderid" element={<h2>gracias por su compra</h2>}/>
+                            <Route path="/checkout/:orderid" element={<Checkoutend/>}/>
                         </Routes>                  
                     </MyProvider>
                 </div>

@@ -11,33 +11,25 @@ function Itemlist(){
     const [isLoading, setIsLoading] = useState(true)
     let { cat, type } = useParams()
 
-
     useEffect(()=> {
-        if(cat === undefined ) {
+        if(cat === undefined && type === undefined ) {
             getItems()
-                .then( (respuestaDatos) => setData(respuestaDatos))
+                .then( (respuestaDatos) => {
+                    setData([])
+                    setData(respuestaDatos)})
                 .finally(() => setIsLoading(false))
-        } else {
+        } else if (type === undefined) {
             getItemsByCategory(cat)
-                .then((respuestaDatos) =>  setData(respuestaDatos))
+                .then((respuestaDatos) =>  {
+                    setData([])
+                    setData(respuestaDatos)})
                 .finally(() => setIsLoading(false))
-        }
-    }, [cat])
-
-    useEffect(()=> {
-        if(type === undefined ) {
-            getItems()
-            .then( (respuestaDatos) => setData(respuestaDatos))
-            .finally(() => setIsLoading(false))
-        } else {
+        } else if (cat === undefined){
             getItemsByType(type)
                 .then((respuestaDatos) =>  setData(respuestaDatos))
                 .finally(() => setIsLoading(false))
         }
-    }, [type])
-    
-    
-
+    }, [cat, type])
     return(
         <div>
             {isLoading && <Loader/>}

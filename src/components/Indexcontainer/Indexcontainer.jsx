@@ -22,17 +22,19 @@ function Indexcontainer(){
         <div className='index__outer'>
             <div className="index-container">
                 <div className="index__bienvenido">
-                    <h1> Bienvenido a Ironplant </h1>
-                    <div className='index__info'>
-
-                    </div>
+                    <h1> Bienvenido a Ironplant, <h2>La primera marca vegana en Chile de suplementos alimenticios</h2> </h1>
+                   { 
+                   /* <div className='index__info'>
+                        
+                    </div> */
+                    }
                 </div>
                 <div className="index__destacados-container">
                     <div className='index__proteins-container'>
                         <Link to="category/proteinas-vegetales"><img className='index__color-proteins' src={colorProtein} alt="proteinas" /></Link>
                     </div>
                     <div className='index__destacados'>
-                        <h1>Productos destacados</h1>
+                        <h1>Conoce nuestros productos</h1>
                         <div className='index__products'>
                         
                         {

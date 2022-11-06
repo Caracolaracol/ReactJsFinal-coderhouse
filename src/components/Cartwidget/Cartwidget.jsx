@@ -10,6 +10,7 @@ import Cartmini from '../Cart/Cartmini'
 function Cartwidget() {
     const { cart } = useContext(CartContext)
     const [anchorEl, setAnchorEl] = useState(null);
+
     const handleClick = (event) => {
         setAnchorEl(anchorEl ? null : event.currentTarget);
     };
@@ -45,7 +46,7 @@ function Cartwidget() {
                         </div>
                     </div>
                 
-                <Popper placement="bottom-end" id={id} open={open} anchorEl={anchorEl} modifiers={[
+                <Popper  onClick={handleClick} placement="bottom-end" id={id} open={open} anchorEl={anchorEl} modifiers={[
     {
       name: 'flip',
       enabled: false,
@@ -70,7 +71,7 @@ function Cartwidget() {
     },
     
     ]} >
-                    <Cartmini></Cartmini>
+                    <Cartmini className='cart-widget__popper' ></Cartmini>
                 </Popper>
             </div>
         </div>

@@ -1,5 +1,7 @@
 import './Footer.css'
-
+import facebook from '../../assets/icons/f.png'
+import twitter from '../../assets/icons/tw.png'
+import instagram from '../../assets/icons/ins.png'
 function Footer() {
     return (
         <div className='footer-container'>
@@ -12,9 +14,9 @@ function Footer() {
                 <div className='footer__siguenos'>
                     <h2>Síguenos: </h2>
                     <div className='footer__siguenos-list'>
-                        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" width={30} alt="facebook" /></div>
-                        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" width={30} alt="twitter" /></div>
-                        <div></div>
+                        <div><img src={facebook} width={40} alt="facebook" /></div>
+                        <div><img src={twitter} width={40} alt="twitter" /></div>
+                        <div><img src={instagram} width={40} alt="instagram" /></div>
                     </div>
                 </div>
             </footer>

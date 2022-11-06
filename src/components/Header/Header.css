@@ -118,6 +118,9 @@
     .header__burger {
         padding: 0rem;
     }
+    .header__logo-link {
+        width: 66%;
+    }
 }
 
 @media screen and (max-width: 320px) {

@@ -1,6 +1,6 @@
 /* ---CARD --- */
 .card-container {
-    margin: 10px;
+    margin: 8px;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(1, 2, 1, 0.065) !important;
@@ -70,8 +70,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.card__title {
-    font-size: 1.2rem;
+.card__title { 
     text-align: center;
 }
 .card__price-stock-container {
@@ -107,7 +106,65 @@
     font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1093px) {
+    .card-outer {
+        width: 13rem;
+    }
+    .card-inner {
+        width: 13rem;
+    }
+    .card__image {
+        max-height: 13rem;
+    }
+    .card__info-container {
+        height: 7rem;
+    }
+    .card__price {
+        font-size: 1.2rem;
+    }
+    .card__price-stock-container {
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 920px) {
+    .card-outer {
+        width: 14rem;
+    }
+    .card-inner {
+        width: 14rem;
+    }
+    .card__image {
+        max-height: 14rem;
+    }
+    .card__info-container {
+        height: 7rem;
+    }
+    .card__price {
+        font-size: 1.2rem;
+    }
+    .card__price-stock-container {
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .card-outer {
+        width: 11rem;
+    }
+    .card-inner {
+        width: 11rem;
+    }
+    .card__image {
+        max-height: 11rem;
+    }
+    .card__info-container {
+        height: 7rem;
+    }
+}
+
 @media screen and (max-width:480px) {
+    .card-container {
+        margin: 7px;
+    }
     .card-outer {
         width: 8rem;
     }
@@ -132,9 +189,6 @@
     }
     .card__price-container {
         width: 38%;
-    }
-    .card__title {
-        font-size: 1.1rem;
     }
     .card__title-container {
         flex-grow: 2;

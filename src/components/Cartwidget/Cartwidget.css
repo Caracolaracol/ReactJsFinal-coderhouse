@@ -52,6 +52,21 @@
 }
 
 
+
+
+.cart-widget__container-outer:hover ~ .cart-widget__popper {
+    animation: hovercart 350ms ease-in;
+    transition: all 0.8s ease;
+}
+
+@keyframes hovercart {
+    from { 
+        opacity: 0;  
+    }
+    to { 
+        opacity: .95;
+    }
+}
 @media screen and (max-width: 812px) {
 
     .cart-widget__container-outer {

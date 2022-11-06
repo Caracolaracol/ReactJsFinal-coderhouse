@@ -1,15 +1,18 @@
 
-import {createContext, useState } from 'react'
+import {createContext, useState, useMemo } from 'react'
 
 export const CartContext = createContext()
 
 const { Provider } = CartContext
 
 function MyProvider({children}) {
-    const [cart, setCart] = useState([])
-
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) ?? [])
+    const [orderId, setOrderId] =useState()
     const isInCart = (id) => {
         return cart.some(prod => prod.id === id) // some, indica si el producto ya existe en cart o no
+    }
+    const getOrderId = (data) => {
+        return setOrderId(data)
     }
 
     const addItem = (item, cantidad) => { // agrega productos al carrito sin pisar existentes
@@ -25,7 +28,7 @@ function MyProvider({children}) {
             setCart([...cart, newItem])
         }
     }
-    const emptyCart  = () => {  
+    const emptyCart  = () => { 
         return setCart([])  
     }
     const deleteItem  = (id) => {   
@@ -37,9 +40,9 @@ function MyProvider({children}) {
     const getItemPrice  = () => {
         return cart.reduce((acc, x) => acc += x.price * x.cantidad, 0)
     }
-    
+    useMemo(() => localStorage.setItem("cart", JSON.stringify(cart)), [cart]);
     return (
-            <Provider value={{cart, isInCart, addItem, emptyCart, deleteItem, getItemPrice, getItemQty}}>
+            <Provider value={{cart, orderId, isInCart, addItem, emptyCart, deleteItem, getItemPrice, getItemQty, getOrderId }}>
                 {children}
             </Provider>
     )

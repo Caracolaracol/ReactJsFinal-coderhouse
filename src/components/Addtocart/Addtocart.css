@@ -80,7 +80,7 @@
     gap: 10px;
 }
 .item-count__btn-add:hover {
-    background-color: rgba(75, 158, 60, 0.831);
+    background-color: rgba(76, 158, 61, 0.831);
     transition: 350ms ease;
     padding: 12px;
     color: rgb(2, 6, 0);
