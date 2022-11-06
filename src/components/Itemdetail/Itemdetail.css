@@ -36,7 +36,7 @@
     margin: 0 2rem 2rem 0;
 }
 .item-detail__image {
-    width: fit-content;
+    width: 70%;
     height: auto;
     -webkit-filter: drop-shadow(5px 5px 5px #031a0757);
     filter: drop-shadow(5px 5px 5px #031a0743);
@@ -79,7 +79,7 @@
 
 /* ---- info producto y detalles --- */
 .item-detail__detail-container { 
-    grid-area: 3 / 1 / 4 / 3; 
+    grid-area: 3 / 1 / 4 / 3;
 }
 
 .item-detail__extra-detail {
@@ -119,7 +119,7 @@
 /* --- Media querys --- */
 @media screen and (max-width: 1093px) {
     .item-detail__outer {
-        max-width: 46rem;
+        max-width: 90%;
     }
 
     .item-detail__image-amino {
@@ -130,12 +130,44 @@
     }
 }
 @media screen and (max-width: 920px) {
+    .item-detail__outer {
+        max-width: 90%;
+    }
+
+}
+@media screen and (max-width: 812px) {
+    .item-detail__outer {
+        max-width: 90%;
+    }
+
+    .item-detail__extra-detail2 {
+        padding: 2rem;
+    }
+    .item-detail__extra-detail {
+        padding: 2rem;
+    }
+    .item-detail__image-container {
+        width: 100%;
+    }
+    .item-detail__image {
+        width: 100%;
+    }
+    .item-detail__inner {
+        position: relative;
+        max-width: 100%;
+    }
 
 }
 @media screen and (max-width: 740px) {
-  
+    .item-detail__sales-data {
+        width: 80%;
+        margin-left: 1rem;
+    }
 }
 @media screen and (max-width: 720px) {
+    .item-detail__outer {
+        max-width: 90%;
+    }
     .item-detail__extra-detail2 {
 
         padding-left: 5rem;
@@ -150,20 +182,35 @@
         flex-direction: column;
         gap: 2rem;
     }
-}
-@media screen and (max-width: 812px) {
-    .item-detail__outer {
-        max-width: 46rem;
+    .item-detail__itemcount {
+        height: 30%;
     }
+    .item-detail__sales-data {
+        width: 85%;
+        margin-left: 1rem;
+    }
+    .item-detail__image-container {
+        width: 85%;
+      }
 
-    .item-detail__extra-detail2 {
-        padding: 2rem;
-    }
-    .item-detail__extra-detail {
-        padding: 2rem;
-    }
+    
 }
+
 
 @media screen and (max-width:480px) {
+    .item-detail__inner {
+        display: grid; 
+        grid-template-columns: 1fr .9fr 0.6fr; 
+        grid-template-rows: .2fr .5fr .3fr .3fr; 
+    }
+    .item-detail__image-container {
+        width: 85%;
+        grid-area: 1 / 4 / 2 / 2;
+        margin-top: 10vh;
+      }
+      .item-detail__sales-data {
 
+        width: 12rem;
+        margin-left: 1rem;
+      }
 }

@@ -161,4 +161,9 @@ p {
   a {
     font-size: 1.3rem;
   }
+  p {
+    font-size: .9rem;
+    color:rgb(81, 86, 72);
+    text-align:center
+  }
 }
