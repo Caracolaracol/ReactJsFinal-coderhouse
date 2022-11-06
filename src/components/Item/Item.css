@@ -98,8 +98,9 @@
     width: 100%;
 }
 .card__price-container {
-    width: 28%;
+    width: 35%;
     text-align: end;
+    padding-right: 5px;
 }
 
 .card__price {
