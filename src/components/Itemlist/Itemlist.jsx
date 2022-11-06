@@ -11,7 +11,7 @@ function Itemlist(){
     const [isLoading, setIsLoading] = useState(true)
     let { cat, type } = useParams()
 
-    useEffect(()=> {
+    useEffect(()=> { // mostrar los datos de los productos de la categoria o tipo
         if(cat === undefined && type === undefined ) {
             getItems()
                 .then( (respuestaDatos) => {

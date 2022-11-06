@@ -5,7 +5,7 @@ import './Cartmini.css'
 import { Link} from 'react-router-dom'
 
 function Cartmini() {
-    const { cart, deleteItem,  getItemPrice } = useContext(CartContext)
+    const { cart, deleteItem,  getItemPrice, emptyCart } = useContext(CartContext)
 
 
     return (
@@ -52,6 +52,13 @@ function Cartmini() {
                         })
                     }
                 </div>
+                { (cart.length === 0) ? "" : 
+                    <div className='cart__btns'>
+                        <div className='cart__goback-container'>
+                            <button className='btn' onClick={() => emptyCart()}>Vaciar carrito</button>
+                        </div>
+                    </div>  
+                }
                 { (cart.length === 0) ? 
                     <div className='cart__checkout-container'>
                     </div> :

@@ -37,10 +37,10 @@ function MyProvider({children}) {
     const getItemQty  = () => {
         return cart.reduce((acc, x) => acc += x.cantidad, 0) //obtener la cantidad de unidades que tiene nuestro carrito, el cero es el valor inicial
     }
-    const getItemPrice  = () => {
+    const getItemPrice  = () => { //obtener preciototal
         return cart.reduce((acc, x) => acc += x.price * x.cantidad, 0)
     }
-    useMemo(() => localStorage.setItem("cart", JSON.stringify(cart)), [cart]);
+    useMemo(() => localStorage.setItem("cart", JSON.stringify(cart)), [cart]); // localstorage
     return (
             <Provider value={{cart, orderId, isInCart, addItem, emptyCart, deleteItem, getItemPrice, getItemQty, getOrderId }}>
                 {children}

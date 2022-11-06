@@ -6,15 +6,19 @@ import card from '../../assets/icons/card.png'
 import { useContext, useState } from 'react'
 import {Link} from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
-
+import toast, { Toaster } from 'react-hot-toast';
 function Itemdetail(props) {
     let [estadoItemDetail, setEstadoItemDetail] = useState(false)
     let { addItem } = useContext(CartContext)
  
     function handleAddToCart(count){
-        alert(`agregaste al ${count} items al carrito!`)
+        const thetoast = () => {
+            return toast(`agregaste ${count} items al carrito!`);
+        }
+        
         setEstadoItemDetail(true)
         addItem(props, count)
+        thetoast()
     }
 
     return ( 
@@ -49,6 +53,14 @@ function Itemdetail(props) {
                        
                         
                     </div>
+                    <Toaster
+                containerStyle={{
+                  top: 10,
+                }}
+                toastOptions={{
+                  duration: 4000,
+                }}
+              />
                 </div>
             </div>
             <div className='item-detail__extra-detail'>
@@ -69,6 +81,7 @@ function Itemdetail(props) {
                     {(props.extradetail === "") ? <h2>Información nutricional</h2> : <p className='item-detail__detail-p'>{props.extradetail}</p>}
                 </div>
             </div>
+            
         </div> 
     )
 }
