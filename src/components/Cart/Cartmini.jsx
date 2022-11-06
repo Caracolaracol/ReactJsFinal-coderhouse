@@ -60,9 +60,9 @@ function Cartmini() {
                     </div>  
                 }
                 { (cart.length === 0) ? 
-                    <div className='cart__checkout-container'>
+                    <div className='cart__checkout-container cart-mini__checkout-container'>
                     </div> :
-                    <div className='cart__checkout-container'>
+                    <div className='cart__checkout-container cart-mini__checkout-container'>
                         <div className='cart__checkout-total'>
                             <div   div className='cart__subtotal'>  
                                 <h3>Subtotal:</h3>
