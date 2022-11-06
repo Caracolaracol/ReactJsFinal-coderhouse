@@ -193,7 +193,12 @@
         width: 85%;
       }
 
-    
+      .item-detail__image-amino {
+        width: 65vw;
+    }
+      .item-detail__image-nutri {
+        width: 65vw;
+    }
 }
 
 
@@ -213,4 +218,10 @@
         width: 12rem;
         margin-left: 1rem;
       }
+      .item-detail__image-amino {
+        width: 85vw;
+    }
+      .item-detail__image-nutri {
+        width: 85vw;
+    }
 }
