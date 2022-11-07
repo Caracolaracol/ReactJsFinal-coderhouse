@@ -16,6 +16,7 @@ Para este desafío realicé un remake de la página oficial de Ironplant, un sit
 - Loader Screen
 - Lista de items, Detalle y Carrito.
 - Incluye checkout con envío de orden a firestore
+- Persistent Data(Local Storage)
 - Actualización de Stock
 - Navbar Clasico y Burger menu tipo Drawer en pantallas de menor resolución.
 
