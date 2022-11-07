@@ -12,10 +12,13 @@ Para este desafío realicé un remake de la página oficial de Ironplant, un sit
 - Collección en firestore
 - Categorías de productos
 - Categorías secundarias de productos
+- Detalles de cada producto
 - Diseño responsive y adaptativo
+- React Context
 - Lista de items, Detalle y Carrito.
 - Incluye checkout con envío de orden a firestore
 - Actualización de Stock
+- Navbar Clasico y Burger menu tipo Drawer en pantallas de menor resolución.
 
 ## Herramientas
 Utilicé las siguientes herramientas y tecnologías para levantar el sitio
