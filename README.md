@@ -29,12 +29,18 @@ Se usó firestore para la base de datos de productos y las órdenes de compra de
 - Hot Toast: Para reemplazar los alert decidí usar Hot Toast, que cumple su función a cabalidad además de ser visualmente más atractivos.
 
 ___
-### Vista mobile
-![Grabación de pantalla 2022-11-06 a la(s) 23 52 33](https://user-images.githubusercontent.com/87249022/200217511-36275569-3852-4505-b1b8-9d9c6540acc3.gif)
 
+### Usage
+![Grabación de pantalla 2022-11-07 a la(s) 00 50 19](https://user-images.githubusercontent.com/87249022/200223646-20f1effa-cbf6-4b32-81c8-1edc0d8b2980.gif)
 
-### Vista desktop
-![Grabación de pantalla 2022-11-07 a la(s) 00 02 28](https://user-images.githubusercontent.com/87249022/200218157-861a848a-edfc-4ee5-a60b-d1603da039f7.gif)
+### Item detail
+![Grabación de pantalla 2022-11-07 a la(s) 00 51 40](https://user-images.githubusercontent.com/87249022/200223666-c5a7ab0b-4e9d-4a33-a123-9beb99cbdb01.gif)
+
+### Order confimation
+![Grabación de pantalla 2022-11-07 a la(s) 00 52 03](https://user-images.githubusercontent.com/87249022/200223678-0517da5f-a4b5-4c0b-ba9c-7dccca532c02.gif)
+
+### Drawer
+![Grabación de pantalla 2022-11-07 a la(s) 00 53 01](https://user-images.githubusercontent.com/87249022/200223685-46f8c79f-f00e-4458-8c6a-d34429663688.gif)
 
 ## Licence
 💡 Distributed under the MIT License. See LICENSE.txt for more information.
