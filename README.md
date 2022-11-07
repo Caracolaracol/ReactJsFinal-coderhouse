@@ -15,7 +15,7 @@ Para este desafío realicé un remake de la página oficial de Ironplant, un sit
 - Diseño responsive y adaptativo
 - Lista de items, Detalle y Carrito.
 - Incluye checkout con envío de orden a firestore
-
+- Actualización de Stock
 
 ## Herramientas
 Utilicé las siguientes herramientas y tecnologías para levantar el sitio
@@ -25,7 +25,11 @@ Utilicé las siguientes herramientas y tecnologías para levantar el sitio
 - ReactJs 
 - MaterialUI
 - Firebase
+- Hot Toast
 
 ### Vista mobile
-![Grabación de pantalla 2022-11-06 a la(s) 23 53 50](https://user-images.githubusercontent.com/87249022/200217385-81871b96-8433-4390-a510-689db90227ef.gif)
 ![Grabación de pantalla 2022-11-06 a la(s) 23 52 33](https://user-images.githubusercontent.com/87249022/200217511-36275569-3852-4505-b1b8-9d9c6540acc3.gif)
+
+
+### Vista desktop
+![Grabación de pantalla 2022-11-07 a la(s) 00 02 28](https://user-images.githubusercontent.com/87249022/200218157-861a848a-edfc-4ee5-a60b-d1603da039f7.gif)
