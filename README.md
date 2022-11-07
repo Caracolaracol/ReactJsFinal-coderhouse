@@ -42,6 +42,22 @@ ___
 ### Drawer
 ![Grabación de pantalla 2022-11-07 a la(s) 00 53 01](https://user-images.githubusercontent.com/87249022/200223685-46f8c79f-f00e-4458-8c6a-d34429663688.gif)
 
+## Getting started
+ Clone the repository:
+```
+git clone https://github.com/Caracolaracol/ReactJsFinal-coderhouse.git
+```
+
+👉 Install npm packages:
+```
+ npm install
+```
+
+👉 Run the app:
+```
+npm start
+```
+
 ## Licence
 💡 Distributed under the MIT License. See LICENSE.txt for more information.
 
