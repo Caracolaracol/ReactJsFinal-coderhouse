@@ -34,3 +34,9 @@ ___
 
 ### Vista desktop
 ![Grabación de pantalla 2022-11-07 a la(s) 00 02 28](https://user-images.githubusercontent.com/87249022/200218157-861a848a-edfc-4ee5-a60b-d1603da039f7.gif)
+
+## Licence
+💡 Distributed under the MIT License. See LICENSE.txt for more information.
+
+## Contact 
+<a>[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/agustin-rojas-c4r4c01/)</a>&nbsp;
