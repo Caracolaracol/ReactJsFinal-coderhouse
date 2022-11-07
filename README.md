@@ -13,6 +13,7 @@ Para este desafío realicé un remake de la página oficial de Ironplant, un sit
 - Detalles de cada producto
 - Diseño responsive y adaptativo
 - React Context
+- Loader Screen
 - Lista de items, Detalle y Carrito.
 - Incluye checkout con envío de orden a firestore
 - Actualización de Stock
