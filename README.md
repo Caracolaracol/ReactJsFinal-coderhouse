@@ -26,4 +26,6 @@ Utilicé las siguientes herramientas y tecnologías para levantar el sitio
 - MaterialUI
 - Firebase
 
+### Vista mobile
 ![Grabación de pantalla 2022-11-06 a la(s) 23 53 50](https://user-images.githubusercontent.com/87249022/200217385-81871b96-8433-4390-a510-689db90227ef.gif)
+![Grabación de pantalla 2022-11-06 a la(s) 23 52 33](https://user-images.githubusercontent.com/87249022/200217511-36275569-3852-4505-b1b8-9d9c6540acc3.gif)
