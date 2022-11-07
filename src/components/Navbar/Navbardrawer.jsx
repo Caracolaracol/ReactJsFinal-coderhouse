@@ -53,8 +53,8 @@ export default function Temporarydrawer() {
             </ul>
           </li>
             <li><Link to="/envios"><h2 className='drawer__title'>Envíos</h2></Link></li>
-            <li><Link to="*"><h2 className='drawer__title'>Ubicación</h2></Link></li>
-            <li><Link to="*"><h2 className='drawer__title'>Sobre nosotros</h2></Link></li>
+            <li><Link to="/ubicacion"><h2 className='drawer__title'>Ubicación</h2></Link></li>
+            <li><Link to="/about"><h2 className='drawer__title'>Sobre nosotros</h2></Link></li>
         </ul>
       </nav>
       

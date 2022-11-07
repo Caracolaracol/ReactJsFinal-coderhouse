@@ -32,8 +32,8 @@ function Navbar() {
                         </ul>
                     </li>
                     <li className="nav__sections"><Link to="/envios"><h3 className="nav__titles">Envíos</h3></Link></li>
-                    <li className="nav__sections"><Link to="*"><h3 className="nav__titles">Ubicación</h3></Link></li>
-                    <li className="nav__sections"><Link to="*"><h3 className="nav__titles">Sobre nosotros</h3></Link></li>
+                    <li className="nav__sections"><Link to="/ubicacion"><h3 className="nav__titles">Ubicación</h3></Link></li>
+                    <li className="nav__sections"><Link to="/about"><h3 className="nav__titles">Sobre nosotros</h3></Link></li>
                 </ul>
             </nav>
             <Cartwidget/>

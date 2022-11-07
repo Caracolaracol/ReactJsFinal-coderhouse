@@ -3,26 +3,25 @@ import { getBestItems } from "../../services/firestore"
 import { Link } from 'react-router-dom'
 import colorProtein from '../../assets/ProteinColor.webp'
 import Item from '../Item/Item'
-
+import Loader from '../Loader/Loader'
 import './Indexcontainer.css'
 
 function Indexcontainer(){
     let [data, setData] = useState([])
-
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(()=> {
             getBestItems()
             .then((respuestaDatos) =>  setData(respuestaDatos))
-            
-        
-        
+            .finally(() => setIsLoading(false))
     }, [])
 
     return(
         <div className='index__outer'>
+            {isLoading && <Loader/>}
             <div className="index-container">
                 <div className="index__bienvenido">
-                    <h1> Bienvenido a Ironplant, <h2>La primera marca vegana en Chile de suplementos alimenticios</h2> </h1>
+                    <h1> Bienvenido a Ironplant <h2>Somos la primera marca vegana en Chile de suplementos alimenticios</h2> </h1>
                 </div>
                 <div className="index__destacados-container">
                     <div className='index__proteins-container'>

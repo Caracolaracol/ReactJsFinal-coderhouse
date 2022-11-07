@@ -11,6 +11,8 @@ import Cart from './components/Cart/Cart'
 import MyProvider from './context/CartContext';
 import Indexcontainer from './components/Indexcontainer/Indexcontainer'
 import { Checkoutend } from './components/Checkout/Checkout';
+import Ubicacion from './pages/Ubicacion';
+import About from './pages/About';
 // import { exportDataToFirestore } from './services/firestore'; // import comentado para cuando quiera volver a llevar data a firestore
 function App() {
     return (
@@ -29,6 +31,8 @@ function App() {
                             <Route path="/checkout" element={<Checkout/>}/>
                             <Route path="/checkout/:orderid" element={<Checkoutend/>}/>
                             <Route path="/envios" element={<Envios/>}/>
+                            <Route path="/ubicacion" element={<Ubicacion/>}/>
+                            <Route path="/about" element={<About/>}/>
                             <Route path="*" element={ <h1> 404: Te perdiste</h1> } />
                         </Routes>                  
                     </MyProvider>
