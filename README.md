@@ -5,8 +5,6 @@
 
 Para este desafío realicé un remake de la página oficial de Ironplant, un sitio de tipo  e-commerce dedicado a la venta de suplementos de origen vegetal. 
 
-
-
 ## Caracteristicas
 - Montado con ReactJS
 - Collección en firestore
@@ -22,13 +20,11 @@ Para este desafío realicé un remake de la página oficial de Ironplant, un sit
 
 ## Herramientas
 Utilicé las siguientes herramientas y tecnologías para levantar el sitio
-- HTML
-- CSS
-- Javascript
-- ReactJs 
-- MaterialUI
-- Firebase
-- Hot Toast
+- MaterialUI:
+Algunos componentes tales como el drawer del burger menu, el Popper del Cartwidget y algunos íconos provienen de MaterialUI con algunas modificaciones para que sirvan de forma eficiente al sitio tanto funcional como visualmente.
+- Firebase: 
+Se usó firestore para la base de datos de productos y las órdenes de compra de los usuarios.
+- Hot Toast: Para reemplazar los alert decidí usar Hot Toast, que cumple su función a cabalidad además de ser visualmente más atractivos.
 
 ___
 ### Vista mobile
