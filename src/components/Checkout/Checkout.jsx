@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import {getFirestore, doc, updateDoc} from 'firebase/firestore'
 import Loader from '../Loader/Loader'
 import './Checkout.css'
-
+import brazo from '../../assets/brazo.png'
 function Checkout(){
     const [dataForm, setDataForm] = useState({name:"", apellido:"", phone:"", email:"", confirmEmail:""})
     const { cart, getItemPrice, emptyCart, getOrderId} = useContext(CartContext)
@@ -188,9 +188,19 @@ function Checkout(){
 export function Checkoutend() {
     const {orderId } = useContext(CartContext)
     return (
-        <div>
-            <h3>Gracias por su compra, su número de orden es: {orderId}
-            </h3>
+        <div className='ty__container'>
+            <div>
+                <h2>
+                    Pedido realizado!
+                </h2>
+            </div>
+            <div>
+                <h3>Gracias por su compra, su número de orden es: {orderId}</h3>
+            </div>
+            <div className='ty__brazo-container'>
+                <img src={brazo} alt="brazo de hojas" className='ty__brazo-logo'></img>
+                <h2 className='ty__brazo-text'>Tómate la B12!💛</h2>
+            </div>
         </div>
     );
 }
