@@ -1,5 +1,6 @@
 <h1 align="center"> Remake of Ironplant.cl 🌱
-<img src="https://user-images.githubusercontent.com/87249022/200217369-068dad68-8e32-4a4e-be20-75f6f47581c2.png" align="center"></img>
+    <br>
+    <img src="https://user-images.githubusercontent.com/87249022/200217369-068dad68-8e32-4a4e-be20-75f6f47581c2.png" align="center"></img>
 </h1>
 ## Proyecto final para el curso React Js de Coderhouse
 
