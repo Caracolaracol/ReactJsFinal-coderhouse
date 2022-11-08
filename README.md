@@ -1,6 +1,6 @@
-<h1 align="center"> Remake of Ironplant.cl 🌱</h1>
+<h1 align="center"> Remake of Ironplant.cl 🌱
 <img src="https://user-images.githubusercontent.com/87249022/200217369-068dad68-8e32-4a4e-be20-75f6f47581c2.png" align="center"></img>
-
+</h1>
 ## Proyecto final para el curso React Js de Coderhouse
 
 Para este desafío realicé un remake de la página oficial de Ironplant, un sitio de tipo  e-commerce dedicado a la venta de suplementos de origen vegetal. 
@@ -31,7 +31,8 @@ Se usó firestore para la base de datos de productos y las órdenes de compra de
 ___
 
 ### Usage
-![Grabación de pantalla 2022-11-07 a la(s) 00 50 19](https://user-images.githubusercontent.com/87249022/200223646-20f1effa-cbf6-4b32-81c8-1edc0d8b2980.gif)
+<h1><img src="https://user-images.githubusercontent.com/87249022/200223646-20f1effa-cbf6-4b32-81c8-1edc0d8b2980.gif" align="center"></img>
+
 
 ### Item detail
 ![Grabación de pantalla 2022-11-07 a la(s) 00 51 40](https://user-images.githubusercontent.com/87249022/200223666-c5a7ab0b-4e9d-4a33-a123-9beb99cbdb01.gif)
@@ -41,7 +42,7 @@ ___
 
 ### Drawer
 ![Grabación de pantalla 2022-11-07 a la(s) 00 53 01](https://user-images.githubusercontent.com/87249022/200223685-46f8c79f-f00e-4458-8c6a-d34429663688.gif)
-
+</h1>
 ## Getting started
 🌱 Clone the repository:
 ```
