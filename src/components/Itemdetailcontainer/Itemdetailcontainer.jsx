@@ -41,8 +41,8 @@ function Itemdetailcontainer() {
                     />
                 
             </div> 
-            <div className='app__brazo-container'>
-                <img src={brazo} alt="brazo de hojas" className='app__brazo-logo'></img>
+            <div className='app__brazo-container barra'>
+                <img src={brazo} alt="brazo de hojas" className='app__brazo-logo brazo-up'></img>
                 <h2 className='app__brazo-text'>Tómate la B12!💛</h2>
             </div>
         </>

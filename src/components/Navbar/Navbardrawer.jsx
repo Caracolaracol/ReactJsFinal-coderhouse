@@ -29,7 +29,6 @@ export default function Temporarydrawer() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      
     >
       <nav className='drawer__nav'>
         <ul>
@@ -57,7 +56,6 @@ export default function Temporarydrawer() {
             <li><Link to="/about"><h2 className='drawer__title'>Sobre nosotros</h2></Link></li>
         </ul>
       </nav>
-      
     </Box>
   );
 
