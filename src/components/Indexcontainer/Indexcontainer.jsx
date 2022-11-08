@@ -10,7 +10,7 @@ function Indexcontainer(){
     let [data, setData] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
-    useEffect(()=> {
+    useEffect(()=> { // get items 'destacados'
             getBestItems()
             .then((respuestaDatos) =>  setData(respuestaDatos))
             .finally(() => setIsLoading(false))

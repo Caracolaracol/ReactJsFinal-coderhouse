@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import './Navbardrawer.css'
 
 export default function Temporarydrawer() {
-  const [state, setState] = React.useState({
+  const [state, setState] = React.useState({ // drawer options( for now i'll only use drawer at the right of the screen)
     top: false,
     left: false,
     bottom: false,

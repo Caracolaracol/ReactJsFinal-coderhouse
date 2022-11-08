@@ -11,11 +11,11 @@ function Cartwidget() {
     const { cart } = useContext(CartContext)
     const [anchorEl, setAnchorEl] = useState(null);
 
-    const handleClick = (event) => {
+    const handleClick = (event) => {  // function the Popper(of material UI) component will show at screen with the 'Cartmini' component
         setAnchorEl(anchorEl ? null : event.currentTarget);
     };
     const open = Boolean(anchorEl);
-    const id = open ? 'simple-popper' : undefined;
+    const id = open ? 'simple-popper' : undefined;  
   
     function getCartNumber(){
         let number = cart.reduce((acc, el) => acc + el.cantidad, 0)
@@ -67,7 +67,7 @@ function Cartwidget() {
     },
     
     ]} >
-                    <Cartmini className='cart-widget__popper' ></Cartmini>
+                    <Cartmini className='cart-widget__popper' ></Cartmini> 
                 </Popper>
             </div>
         </div>

@@ -11,7 +11,7 @@ function Itemdetail(props) {
     let [estadoItemDetail, setEstadoItemDetail] = useState(false)
     let { addItem } = useContext(CartContext)
  
-    function handleAddToCart(count){
+    function handleAddToCart(count){ // add to cart with toaster alert.
         const thetoast = () => {
             return toast(`agregaste ${count} items al carrito!`);
         }
